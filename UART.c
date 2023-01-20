@@ -5,7 +5,7 @@
 #include "UART.h"
 
 // some example data
-uint8_t data[12] = {0,1,2,3,4,5,6,7,8,9,10,11};
+//uint8_t data[12] = {0,1,2,3,4,5,6,7,8,9,10,11};
 
 
 void uart_setup() {
@@ -85,7 +85,7 @@ void uart_get_telem() {
 void send_packet(uint8_t *data, int len, int dest_hwid) {
 
     if (len > MAX_PAYLOAD_LEN) {
-
+        // ?
     }
 
     uint8_t packet[len + 5];    // length of full packet

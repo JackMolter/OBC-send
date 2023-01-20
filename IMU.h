@@ -1,6 +1,7 @@
 // values 
 #define I2C_PORT i2c0
-#define BMI088_BAUD 112800 // ? from video example
+#define BMI088_BAUD 400000 // ? from video example
+#define ACCEL_DATA_LEN 6
 
 // pins
 #define BMI088_SDA 8

@@ -15,7 +15,7 @@ static uint cs_pin; // to drive high or low
 static uint dma_chan;
 
 uint8_t page_buf[FLASH_PAGE_SIZE]; // length of data
-const uint32_t target_addr = 0; // address of the first data that is to be read
+//uint32_t target_addr = 0; // address of the first data that is to be read
 
 // from flash.c
 static inline void dma_done_handle() {
@@ -34,7 +34,7 @@ int64_t cs_alarm(alarm_id_t id, void *user_data) {
     return 0;
 }
 
-void setup(uint cs){
+void flash_setup(uint cs){
     cs_pin = cs;
     
     // set up
@@ -104,6 +104,7 @@ void flash_read_data(uint32_t addr, uint8_t *buf, size_t len) {
     spi_read_blocking(Flash_SPI, 0, buf, len);
 
     gpio_put(Flash_CS, 1); // pull cs pin high to end transmission
+
 }
 
 // almost the same as read data with some extra stuff
@@ -203,7 +204,7 @@ int main() {
     
     printf("SPI flash example\n");
     sleep_ms(100);
-    setup(Flash_CS);
+    flash_setup(Flash_CS);
     sleep_ms(100);
     //get_id();
     //sleep_ms(100);
@@ -231,6 +232,7 @@ int main() {
 */
 
 void dma_do_stuff(){ // doesn't work
+
     sleep_ms(8000); // minicom time 
 
     // writes data to spi and then reads it back 
@@ -280,5 +282,9 @@ void dma_do_stuff(){ // doesn't work
     dma_channel_unclaim(dma_tx);
     dma_channel_unclaim(dma_rx);
 
+}
 
+// address to read/write from,var to read/write, length of data
+void handle_accel(uint32_t addr, uint8_t *buf, size_t len) {
+    
 }

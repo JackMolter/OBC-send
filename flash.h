@@ -32,6 +32,9 @@
 
 // initialize functions 
 
+// setup
+void __not_in_flash_func(flash_setup)();
+
 // write enable 
 void __not_in_flash_func(flash_write_enable)(); 
 
@@ -59,10 +62,14 @@ void __not_in_flash_func(flash_erase_64k)(uint32_t addr);
 // chip erase
 void __not_in_flash_func(flash_erase_chip)();
 
-// DMA stuff
 // check if busy
 int __not_in_flash_func(check_busy)();
+
+// DMA
 static inline void __not_in_flash_func(dma_done_handle)();
 int64_t __not_in_flash_func(cs_alarm)();
 
 void __not_in_flash_func(dma_do_stuff)();
+
+// accelerometer stuff
+void __not_in_flash_func(handle_accel)(uint32_t addr, uint8_t *buf, size_t len);

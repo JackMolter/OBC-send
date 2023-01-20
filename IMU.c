@@ -3,6 +3,8 @@
 #include "hardware/i2c.h"
 
 #include "IMU.h"
+
+uint8_t imu[6]; // stores accel data
 static int addr = 0x19; //0x18 when pin pulled to ground, accelerometer 
 // static int addr = 0x69 gyroscope 
 
@@ -57,6 +59,26 @@ void imu_init(void){
     //sleep_ms(30);
 
 }
+
+void get_accel() {
+    int16_t accelX;
+    int16_t accelY;
+    int16_t accelZ;
+
+    uint8_t val = 0x12; // variable to hold data 
+
+    i2c_write_blocking(I2C_PORT, addr, &val, 1, true);
+    i2c_read_blocking(I2C_PORT, addr, imu, 6, false);
+
+    accelX = (int16_t)((imu[1]<<8) | imu[0]);
+    accelY = (int16_t)((imu[3]<<8) | imu[2]);
+    accelZ = (int16_t)((imu[5]<<8) | imu[4]);
+
+
+    
+}
+
+
 /*
 int main(void){
     stdio_init_all(); 
@@ -95,7 +117,7 @@ int main(void){
 
         accelX = (int16_t)((imu[1]<<8) | imu[0]);
         accelY = (int16_t)((imu[3]<<8) | imu[2]);
-        accelZ = (int16_t)((imu[5]<<8) | imu[4]);
+        accelZ = (int16_t)((imu[5]<<8) | imu[4]);        
 
         x = imu[1]*256 + imu[0];
         y = imu[3]*256 + imu[2];
