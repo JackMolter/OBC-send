@@ -5,7 +5,7 @@
 #include "IMU.h"
 
 uint8_t imu[6]; // stores accel data
-static int addr = 0x19; //0x18 when pin pulled to ground, accelerometer 
+static int addr = BMI088_ID; //0x18 when pin pulled to ground, accelerometer 
 // static int addr = 0x69 gyroscope 
 
 
@@ -23,38 +23,26 @@ void imu_init(void){
     uint8_t data[2];
 
     // Reset IMU
-    data[0] = 0x3F;
-    data[1] = 0x00;
+    data[0] = ACC_SOFTRESET;
+    data[1] = ACC_RESET;
     i2c_write_blocking(I2C_PORT, addr, data, 2, true);
-    sleep_ms(30);
+    sleep_ms(10);
 
     // turn accelerometer on
-    data[0] = 0x7D;
-    data[1] = 0x04;  // normal mode 
+    data[0] = ACC_PWR_CTRL;
+    data[1] = ACC_ON;  // normal mode 
     i2c_write_blocking(I2C_PORT, addr, data, 2, true);
-    sleep_ms(30);
+    sleep_ms(10);
 
     // set range 
-    data[0] = 0x41;
-    data[1] = 0x01;  // +- 3g 
+    data[0] = ACC_RANGE;
+    data[1] = ACC_RANGE_3G;  // +- 3g 
     i2c_write_blocking(I2C_PORT, addr, data, 2, true);
-    sleep_ms(30);
-
-    // set sampling mode 
-    //data[0] = 0x40;
-    //data[1] = 0xA7;  // normal mode 
-    //i2c_write_blocking(I2C_PORT, addr, data, 2, true);
-    //sleep_ms(30);
-
-    // enable positive self-test polarity
-    //data[0] = 0x6D;
-    //data[1] = 0x0D; 
-    //i2c_write_blocking(I2C_PORT, addr, data, 2, true);
-    //sleep_ms(60);
+    sleep_ms(10);
 
     // turn gyro off
-    //data[0] = 0x11;// GYRO_LPM1 register
-    //data[1] = 0x80; // suspend mode 
+    //data[0] = GYRO_LMP1;  // GYRO_LPM1 register
+    //data[1] = GYRO_SUSPEND; // suspend mode 
     //i2c_write_blocking(I2C_PORT, addr, data, 2, true);
     //sleep_ms(30);
 
@@ -70,10 +58,10 @@ void get_accel() {
     i2c_write_blocking(I2C_PORT, addr, &val, 1, true);
     i2c_read_blocking(I2C_PORT, addr, imu, 6, false);
 
-    accelX = (int16_t)((imu[1]<<8) | imu[0]);
+    accelX = (int16_t)((imu[1]<<8) | imu[0]);   // puts in MSB-LSB order 
     accelY = (int16_t)((imu[3]<<8) | imu[2]);
     accelZ = (int16_t)((imu[5]<<8) | imu[4]);
-
+    //TODO: convert this to m/s and ouput those values instread of MSB/LSB 
 
     
 }

@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+/home/jackmolter/OBC-send/IMU.c
+pico/stdlib.h
+/home/jackmolter/OBC-send/pico/stdlib.h
+stdio.h
+-
+hardware/i2c.h
+/home/jackmolter/OBC-send/hardware/i2c.h
+IMU.h
+/home/jackmolter/OBC-send/IMU.h
+
+/home/jackmolter/OBC-send/IMU.h
+
+/home/jackmolter/OBC-send/UART.c
+pico/stdlib.h
+/home/jackmolter/OBC-send/pico/stdlib.h
+stdio.h
+-
+hardware/uart.h
+/home/jackmolter/OBC-send/hardware/uart.h
+UART.h
+/home/jackmolter/OBC-send/UART.h
+
+/home/jackmolter/OBC-send/UART.h
+stdint.h
+-
+
 /home/jackmolter/OBC-send/flash.c
 stdio.h
 -
@@ -21,6 +47,28 @@ flash.h
 /home/jackmolter/OBC-send/flash.h
 
 /home/jackmolter/OBC-send/flash.h
+
+/home/jackmolter/OBC-send/main.c
+stdio.h
+-
+pico/stdlib.h
+/home/jackmolter/OBC-send/pico/stdlib.h
+hardware/dma.h
+/home/jackmolter/OBC-send/hardware/dma.h
+hardware/irq.h
+/home/jackmolter/OBC-send/hardware/irq.h
+hardware/spi.h
+/home/jackmolter/OBC-send/hardware/spi.h
+hardware/uart.h
+/home/jackmolter/OBC-send/hardware/uart.h
+hardware/i2c.h
+/home/jackmolter/OBC-send/hardware/i2c.h
+IMU.h
+/home/jackmolter/OBC-send/IMU.h
+flash.h
+/home/jackmolter/OBC-send/flash.h
+UART.h
+/home/jackmolter/OBC-send/UART.h
 
 /home/jackmolter/pico/pico-sdk/src/boards/include/boards/pico.h
 
@@ -94,6 +142,8 @@ hardware/platform_defs.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
 
+/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
+
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
@@ -113,6 +163,12 @@ hardware/address_mapped.h
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
 hardware/regs/dma.h
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/dma.h
+
+/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
+hardware/address_mapped.h
+/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
+hardware/regs/i2c.h
+/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/i2c.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
 hardware/address_mapped.h
@@ -177,6 +233,16 @@ hardware/structs/sio.h
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/hardware/structs/sio.h
 hardware/structs/padsbank0.h
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/hardware/structs/padsbank0.h
+
+/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
+pico.h
+/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/pico.h
+pico/time.h
+/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/pico/time.h
+hardware/structs/i2c.h
+/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/hardware/structs/i2c.h
+hardware/regs/dreq.h
+/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/hardware/regs/dreq.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
 pico.h

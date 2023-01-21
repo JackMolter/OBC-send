@@ -14,13 +14,12 @@
 
 uint32_t target_addr = 0;   // for simplicity 
 uint8_t imu[6];
-uint8_t dat[6];
 
 
 void main() {
     // initilize all 
     imu_init();
-    flash_setup(Flash_CS);
+    flash_setup(FLASH_CS);
     uart_setup();
     openlst_setup();
     sleep_ms(100);

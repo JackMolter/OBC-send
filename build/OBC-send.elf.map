@@ -34,7 +34,7 @@ Archive member included to satisfy reference by file (symbol)
 Allocating common symbols
 Common symbol       size              file
 
-dat                 0x6               CMakeFiles/OBC-send.dir/main.c.obj
+dat                 0x6               CMakeFiles/OBC-send.dir/flash.c.obj
 sf_table            0x100             CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 imu                 0x6               CMakeFiles/OBC-send.dir/IMU.c.obj
 errno               0x4               /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-reent.o)
@@ -90,28 +90,27 @@ Discarded input sections
  .text.get_id   0x0000000000000000       0x54 CMakeFiles/OBC-send.dir/flash.c.obj
  .text.flash_busy
                 0x0000000000000000        0x4 CMakeFiles/OBC-send.dir/flash.c.obj
- .bss.erase_chip.6363
+ .bss.erase_chip.6364
                 0x0000000000000000        0x1 CMakeFiles/OBC-send.dir/flash.c.obj
- .bss.erase_dat32.6356
+ .bss.erase_dat32.6357
                 0x0000000000000000        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
- .bss.erase_dat64.6360
+ .bss.erase_dat64.6361
                 0x0000000000000000        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
- .bss.rxbuf.6371
+ .bss.rxbuf.6372
                 0x0000000000000000      0x400 CMakeFiles/OBC-send.dir/flash.c.obj
- .bss.txbuf.6370
+ .bss.txbuf.6371
                 0x0000000000000000      0x400 CMakeFiles/OBC-send.dir/flash.c.obj
- COMMON         0x0000000000000000      0x100 CMakeFiles/OBC-send.dir/flash.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/UART.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/UART.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/UART.c.obj
  .rodata.uart_test.str1.4
                 0x0000000000000000        0xe CMakeFiles/OBC-send.dir/UART.c.obj
  .text.uart_test
-                0x0000000000000000       0x64 CMakeFiles/OBC-send.dir/UART.c.obj
+                0x0000000000000000       0x5c CMakeFiles/OBC-send.dir/UART.c.obj
  .text.uart_ack_test
-                0x0000000000000000       0x5c CMakeFiles/OBC-send.dir/UART.c.obj
+                0x0000000000000000       0x58 CMakeFiles/OBC-send.dir/UART.c.obj
  .text.uart_get_telem
-                0x0000000000000000       0x5c CMakeFiles/OBC-send.dir/UART.c.obj
+                0x0000000000000000       0x54 CMakeFiles/OBC-send.dir/UART.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/IMU.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/IMU.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/IMU.c.obj
@@ -1255,9 +1254,9 @@ Discarded input sections
  .comment       0x0000000000000000       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .ARM.attributes
                 0x0000000000000000       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccsG2mby.o
- .data          0x0000000000000000        0x0 /tmp/ccsG2mby.o
- .bss           0x0000000000000000        0x0 /tmp/ccsG2mby.o
+ .text          0x0000000000000000        0x0 /tmp/cc5xUYlE.o
+ .data          0x0000000000000000        0x0 /tmp/cc5xUYlE.o
+ .bss           0x0000000000000000        0x0 /tmp/cc5xUYlE.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1478,7 +1477,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccsG2mby.o
+ .boot2         0x0000000010000000      0x100 /tmp/cc5xUYlE.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2314,7 +2313,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020041000                __scratch_y_end__ = .
                 0x0000000010005c88                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x00000000200006a8      0xdac
+.bss            0x00000000200006a8      0xeac
                 0x00000000200006a8                . = ALIGN (0x4)
                 0x00000000200006a8                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -2354,7 +2353,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  .bss.desc_str.7060
                 0x0000000020000ce0       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .bss.drivers   0x0000000020000d08        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .bss.erase_dat4.6352
+ .bss.erase_dat4.6353
                 0x0000000020000d0c        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
  *fill*         0x0000000020000d0f        0x1 
  .bss.filter    0x0000000020000d10        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -2367,7 +2366,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  .bss.next_buffer_ptr
                 0x000000002000111c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.pools     0x0000000020001120       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
- .bss.read_dat.6334
+ .bss.read_dat.6335
                 0x0000000020001130        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
  *fill*         0x0000000020001133        0x1 
  .bss.retrieved_id
@@ -2387,7 +2386,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  .bss.usbd_serial_str
                 0x0000000020001160       0x11 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  *fill*         0x0000000020001171        0x3 
- .bss.write_dat.6340
+ .bss.write_dat.6341
                 0x0000000020001174        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
  .bss._app_driver_count
                 0x0000000020001177        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -2403,29 +2402,29 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x000000002000117d        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
  *fill*         0x000000002000117e        0x2 
- COMMON         0x0000000020001180        0x6 CMakeFiles/OBC-send.dir/IMU.c.obj
-                0x0000000020001180                imu
- *fill*         0x0000000020001186        0x2 
- COMMON         0x0000000020001188        0x6 CMakeFiles/OBC-send.dir/main.c.obj
-                0x0000000020001188                dat
- *fill*         0x000000002000118e        0x2 
- COMMON         0x0000000020001190        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000020001190                uart_char_to_line_feed
- COMMON         0x0000000020001194      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020001194                sd_table
- COMMON         0x0000000020001294      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000020001294                sf_table
- COMMON         0x0000000020001394       0xc0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020001394                _usbd_qdef_buf
-                0x0000000020001454                . = ALIGN (0x4)
-                0x0000000020001454                __bss_end__ = .
+ COMMON         0x0000000020001180      0x108 CMakeFiles/OBC-send.dir/flash.c.obj
+                0x0000000020001180                dat
+                0x0000000020001188                page_buf
+ COMMON         0x0000000020001288        0x6 CMakeFiles/OBC-send.dir/IMU.c.obj
+                0x0000000020001288                imu
+ *fill*         0x000000002000128e        0x2 
+ COMMON         0x0000000020001290        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x0000000020001290                uart_char_to_line_feed
+ COMMON         0x0000000020001294      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020001294                sd_table
+ COMMON         0x0000000020001394      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000020001394                sf_table
+ COMMON         0x0000000020001494       0xc0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020001494                _usbd_qdef_buf
+                0x0000000020001554                . = ALIGN (0x4)
+                0x0000000020001554                __bss_end__ = .
 
-.heap           0x0000000020001454      0x800
-                0x0000000020001454                __end__ = .
-                0x0000000020001454                end = __end__
+.heap           0x0000000020001554      0x800
+                0x0000000020001554                __end__ = .
+                0x0000000020001554                end = __end__
  *(.heap*)
- .heap          0x0000000020001454      0x800 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x0000000020001c54                __HeapLimit = .
+ .heap          0x0000000020001554      0x800 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000000020001d54                __HeapLimit = .
 
 .stack1_dummy   0x0000000020040000        0x0
  *(.stack1*)
@@ -2519,7 +2518,7 @@ LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardwa
 LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-LOAD /tmp/ccsG2mby.o
+LOAD /tmp/cc5xUYlE.o
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2645,7 +2644,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000884       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .ARM.attributes
-                0x00000000000008b0       0x22 /tmp/ccsG2mby.o
+                0x00000000000008b0       0x22 /tmp/cc5xUYlE.o
  .ARM.attributes
                 0x00000000000008d2       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

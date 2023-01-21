@@ -34,7 +34,6 @@ void openlst_setup() {
 
 // sends a string to serial, viewable through minicom 
 void uart_test() {
-    sleep_ms(100);
     //uart_putc_raw(UART_ID, 'J'); // sends a J
     //uart_putc(UART_ID, 'M');
     uart_puts(UART_ID, "Jack was here");
@@ -42,12 +41,11 @@ void uart_test() {
 
 // simple test of sending and recieivng ack 
 void uart_ack_test() {
-    sleep_ms(100);
     uint8_t ack_packet[9]; // initilizes and sets length of the ack packet
     uint8_t acknowledge[9];
 
-    ack_packet[0] = 0x22;   // always the same
-    ack_packet[1] = 0x69;   // always the same
+    ack_packet[0] = OPENLST_PACKET_HEADER_1;   // always the same
+    ack_packet[1] = OPENLST_PACKET_HEADER_2;   // always the same
     ack_packet[2] = 0x06;
     ack_packet[3] = 0xFF;
     ack_packet[4] = 0xFF;
@@ -62,12 +60,11 @@ void uart_ack_test() {
 
 // sends a packet to get some useful telemetry info back
 void uart_get_telem() {
-    sleep_ms(100);
     uint8_t get_telem[9];
     uint8_t telem[87];  // length of telem message 
 
-    get_telem[0] = 0x22;
-    get_telem[1] = 0x69;
+    get_telem[0] = OPENLST_PACKET_HEADER_1;
+    get_telem[1] = OPENLST_PACKET_HEADER_2;
     get_telem[2] = 0x06;
     get_telem[3] = 0xFF;
     get_telem[4] = 0xFF;
@@ -91,8 +88,8 @@ void send_packet(uint8_t *data, int len, int dest_hwid) {
     uint8_t packet[len + 5];    // length of full packet
 
     // parts of the packet that are always the same
-    packet[0] = 0x22;
-    packet[1] = 0x69;
+    packet[0] = OPENLST_PACKET_HEADER_1;
+    packet[1] = OPENLST_PACKET_HEADER_2;
     packet[2] = len;    // length of data, not full packet
     packet[len + 3] = dest_hwid;
     packet[len + 4] = 0x18; // random? does this matter?? TODO: test

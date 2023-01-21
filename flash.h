@@ -1,32 +1,34 @@
 // values
-#define Flash_Baud 1000 * 1000 // for test 
+#define FLASH_BAUD 1000 * 1000 // for test 
 #define FLASH_PAGE_SIZE 256
 #define FLASH_SECTOR_SIZE 4096
-#define Random_Data_Size 256
+#define RANDOM_DATA_SIZE 256
 #define FLASH_CS_DELAY 100 // us
-// __not_in_flash_func means a function wont be stored in flash 
+
+// vars
+uint8_t dat[6];
 
 // pins
-#define Flash_SPI spi0
-#define Flash_MOSI 3
-#define Flash_MISO 0 //4
-#define Flash_CS 1
-#define Flash_SCK 2 
+#define FLASH_SPI spi0
+#define FLASH_MOSI 3
+#define FLASH_MISO 0
+#define FLASH_SCK 2 
+#define FLASH_CS 1
 
 // commands
-#define Dummy_byte 0x00
-#define Read_ID 0x4B
-#define Write_Enable 0x06
-#define Read_Data 0x03
-#define Write_Data 0x02
-#define Erase_4 0x20
-#define Erase_32 0x52
-#define Erase_64 0xD8
-#define Erase_Chip 0xC7
+#define FLASH_DUMMY_BYTE 0x00
+#define FLASH_READ_ID 0x4B
+#define FLASH_WRITE_ENABLE 0x06
+#define FLASH_READ_DATA 0x03
+#define FLASH_WRITE_DATA 0x02
+#define FLASH_ERASE_4 0x20
+#define FLASH_ERASE_32 0x52
+#define FLASH_ERASE_64 0xD8
+#define FLASH_ERASE_CHIP 0xC7
 
-#define Read_Register1 0x05 // probably the only useful one
-#define Read_Register2 0x35
-#define Read_Register3 0x15
+#define FLASH_READ_REGISTER1 0x05 // probably the only useful one
+#define FLASH_READ_REGISTER2 0x35
+#define FLASH_READ_REGISTER3 0x15
 
 
 

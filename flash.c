@@ -30,7 +30,7 @@ static inline void dma_done_handle() {
 /*! \brief Wrapper function to be triggered when DMA flash transfer is done.
  */
 int64_t cs_alarm(alarm_id_t id, void *user_data) {
-    gpio_put(Flash_CS, 1);
+    gpio_put(FLASH_CS, 1);
     return 0;
 }
 
@@ -38,10 +38,10 @@ void flash_setup(uint cs){
     cs_pin = cs;
     
     // set up
-    spi_init(Flash_SPI, Flash_Baud);
-    gpio_set_function(Flash_MISO,GPIO_FUNC_SPI);
-    gpio_set_function(Flash_MOSI,GPIO_FUNC_SPI);
-    gpio_set_function(Flash_SCK,GPIO_FUNC_SPI);
+    spi_init(FLASH_SPI, FLASH_BAUD);
+    gpio_set_function(FLASH_MISO,GPIO_FUNC_SPI);
+    gpio_set_function(FLASH_MOSI,GPIO_FUNC_SPI);
+    gpio_set_function(FLASH_SCK,GPIO_FUNC_SPI);
 
     // Chip select is active-low, so we'll initialise it to a driven-high state
     gpio_init(cs_pin);
@@ -68,42 +68,42 @@ void flash_setup(uint cs){
 }
 
 void flash_write_enable() {
-    gpio_put(Flash_CS, 0); // pull cs pin low to start transmission
+    gpio_put(FLASH_CS, 0); // pull cs pin low to start transmission
     uint8_t buf[1];
 
-    buf[0] = Write_Enable;
-    spi_write_blocking(Flash_SPI, buf, 1);
+    buf[0] = FLASH_WRITE_ENABLE;
+    spi_write_blocking(FLASH_SPI, buf, 1);
 
-    gpio_put(Flash_CS, 1); // pull cs pin high to end transmission
+    gpio_put(FLASH_CS, 1); // pull cs pin high to end transmission
 }
 
 // used to determine things like if the chip is busy or completed a read/write
 //      can be used at any time 
 // can be modified to get the 2nd or 3rd status registers
 void flash_read_register() {
-    gpio_put(Flash_CS, 0); // pull cs pin low to start transmission
+    gpio_put(FLASH_CS, 0); // pull cs pin low to start transmission
     uint8_t buf[1];
     uint8_t reg[8];
 
-    buf[0] = Read_Register2;
-    spi_write_blocking(Flash_SPI, buf, 1);
-    spi_read_blocking(Flash_SPI, 0, reg, 8);
+    buf[0] = FLASH_READ_REGISTER2;
+    spi_write_blocking(FLASH_SPI, buf, 1);
+    spi_read_blocking(FLASH_SPI, 0, reg, 8);
 
-    gpio_put(Flash_CS, 1); // pull cs pin high to end transmission
+    gpio_put(FLASH_CS, 1); // pull cs pin high to end transmission
 }
 
 void flash_read_data(uint32_t addr, uint8_t *buf, size_t len) {
     static uint8_t read_dat[3];
-    read_dat[0] = Read_Data; // command to read
+    read_dat[0] = FLASH_READ_DATA; // command to read
     read_dat[1] = addr >> 16;
     read_dat[2] = addr >> 8;
     read_dat[3] = addr; // set to 0 if reading a full page 
 
-    gpio_put(Flash_CS, 0); // pull cs pin low to start transmission
-    spi_write_blocking(Flash_SPI, read_dat, 4);
-    spi_read_blocking(Flash_SPI, 0, buf, len);
+    gpio_put(FLASH_CS, 0); // pull cs pin low to start transmission
+    spi_write_blocking(FLASH_SPI, read_dat, 4);
+    spi_read_blocking(FLASH_SPI, 0, buf, len);
 
-    gpio_put(Flash_CS, 1); // pull cs pin high to end transmission
+    gpio_put(FLASH_CS, 1); // pull cs pin high to end transmission
 
 }
 
@@ -111,18 +111,18 @@ void flash_read_data(uint32_t addr, uint8_t *buf, size_t len) {
 void flash_write_data(uint32_t addr, uint8_t *buf, size_t len) {
 
     static uint8_t write_dat[3];
-    write_dat[0] = Write_Data; // command to write
+    write_dat[0] = FLASH_WRITE_DATA; // command to write
     write_dat[1] = addr >> 16;
     write_dat[2] = addr >> 8;
     write_dat[3] = addr;
 
     flash_write_enable(); // enable write 
 
-    gpio_put(Flash_CS, 0); // pull cs pin low to start transmission
-    spi_write_blocking(Flash_SPI, write_dat, 4);
-    spi_write_blocking(Flash_SPI, buf, len);
+    gpio_put(FLASH_CS, 0); // pull cs pin low to start transmission
+    spi_write_blocking(FLASH_SPI, write_dat, 4);
+    spi_write_blocking(FLASH_SPI, buf, len);
 
-    gpio_put(Flash_CS, 1); // pull cs pin high to end transmission
+    gpio_put(FLASH_CS, 1); // pull cs pin high to end transmission
 
 }
 
@@ -130,66 +130,66 @@ void flash_write_data(uint32_t addr, uint8_t *buf, size_t len) {
 void get_id() {
     uint8_t ID_BUF[5];
     uint8_t SixFour_ID[64];
-    gpio_put(Flash_CS, 0); // pull cs pin low to start transmission
-    ID_BUF[0] = Read_ID;
-    ID_BUF[1] = Dummy_byte;
-    ID_BUF[2] = Dummy_byte;
-    ID_BUF[3] = Dummy_byte;
-    ID_BUF[4] = Dummy_byte;
+    gpio_put(FLASH_CS, 0); // pull cs pin low to start transmission
+    ID_BUF[0] = FLASH_READ_ID;
+    ID_BUF[1] = FLASH_DUMMY_BYTE;
+    ID_BUF[2] = FLASH_DUMMY_BYTE;
+    ID_BUF[3] = FLASH_DUMMY_BYTE;
+    ID_BUF[4] = FLASH_DUMMY_BYTE;
 
-    spi_write_blocking(Flash_SPI, ID_BUF, 5);
-    spi_read_blocking(Flash_SPI, 0 ,SixFour_ID, 64);
+    spi_write_blocking(FLASH_SPI, ID_BUF, 5);
+    spi_read_blocking(FLASH_SPI, 0 ,SixFour_ID, 64);
 
     // print to serial the unique ID
     for ( int i = 0; i < 64; i++) {
         printf("%02x", SixFour_ID[i]);
     }
-    gpio_put(Flash_CS, 1); // pull cs pin high to end transmission
+    gpio_put(FLASH_CS, 1); // pull cs pin high to end transmission
 }
 
 void flash_erase_4k(uint32_t addr) {
     static uint8_t erase_dat4[3];
-    erase_dat4[0] = Erase_4; 
+    erase_dat4[0] = FLASH_ERASE_4; 
     erase_dat4[1] = addr >> 16;
     erase_dat4[2] = addr >> 8;
     erase_dat4[3] = addr;
 
     flash_write_enable();
-    gpio_put(Flash_CS, 0);
-    spi_write_blocking(Flash_SPI, erase_dat4, 4);
-    gpio_put(Flash_CS, 1);
+    gpio_put(FLASH_CS, 0);
+    spi_write_blocking(FLASH_SPI, erase_dat4, 4);
+    gpio_put(FLASH_CS, 1);
 }
 void flash_erase_32k(uint32_t addr) {
     static uint8_t erase_dat32[3];
-    erase_dat32[0] = Erase_32; 
+    erase_dat32[0] = FLASH_ERASE_32; 
     erase_dat32[1] = addr >> 16;
     erase_dat32[2] = addr >> 8;
     erase_dat32[3] = addr;
 
     flash_write_enable();
-    gpio_put(Flash_CS, 0);
-    spi_write_blocking(Flash_SPI, erase_dat32, 4);
-    gpio_put(Flash_CS, 1);
+    gpio_put(FLASH_CS, 0);
+    spi_write_blocking(FLASH_SPI, erase_dat32, 4);
+    gpio_put(FLASH_CS, 1);
 }
 void flash_erase_64k(uint32_t addr) {
     static uint8_t erase_dat64[3];
-    erase_dat64[0] = Erase_64; 
+    erase_dat64[0] = FLASH_ERASE_64; 
     erase_dat64[1] = addr >> 16;
     erase_dat64[2] = addr >> 8;
     erase_dat64[3] = addr;
     
     flash_write_enable();
-    gpio_put(Flash_CS, 0);
-    spi_write_blocking(Flash_SPI, erase_dat64, 4);
-    gpio_put(Flash_CS, 1);
+    gpio_put(FLASH_CS, 0);
+    spi_write_blocking(FLASH_SPI, erase_dat64, 4);
+    gpio_put(FLASH_CS, 1);
 }
 void flash_erase_chip() {
     static uint8_t erase_chip[1];
-    erase_chip[0] = Erase_Chip; 
+    erase_chip[0] = FLASH_ERASE_CHIP; 
 
-    gpio_put(Flash_CS, 0);
-    spi_write_blocking(Flash_SPI, erase_chip, 1);
-    gpio_put(Flash_CS, 1);
+    gpio_put(FLASH_CS, 0);
+    spi_write_blocking(FLASH_SPI, erase_chip, 1);
+    gpio_put(FLASH_CS, 1);
 }
 
 int flash_busy() {
@@ -249,10 +249,10 @@ void dma_do_stuff(){ // doesn't work
 
     dma_channel_config c = dma_channel_get_default_config(dma_tx);
     channel_config_set_transfer_data_size(&c, DMA_SIZE_8);
-    channel_config_set_dreq(&c, spi_get_dreq(Flash_SPI, true));
+    channel_config_set_dreq(&c, spi_get_dreq(FLASH_SPI, true));
 
     dma_channel_configure(dma_tx, &c,
-                          &spi_get_hw(Flash_SPI)->dr, // write address
+                          &spi_get_hw(FLASH_SPI)->dr, // write address
                           txbuf, // read address
                           TEST_SIZE, // element count (each element is of size transfer_data_size)
                           false); // don't start yet    
@@ -260,13 +260,13 @@ void dma_do_stuff(){ // doesn't work
     // Configre RX (pretty simular to tx)
     c = dma_channel_get_default_config(dma_rx);
     channel_config_set_transfer_data_size(&c, DMA_SIZE_8);
-    channel_config_set_dreq(&c, spi_get_dreq(Flash_SPI, false));
+    channel_config_set_dreq(&c, spi_get_dreq(FLASH_SPI, false));
     channel_config_set_read_increment(&c, false); // this sets the speed i believe
     channel_config_set_write_increment(&c, true);
 
     dma_channel_configure(dma_rx, &c,
                           rxbuf, // write address
-                          &spi_get_hw(Flash_SPI)->dr, // read address
+                          &spi_get_hw(FLASH_SPI)->dr, // read address
                           TEST_SIZE, // element count (each element is of size transfer_data_size)
                           false); // don't start yet
 
