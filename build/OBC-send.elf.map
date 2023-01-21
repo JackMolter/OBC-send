@@ -67,10 +67,18 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/flash.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/flash.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/flash.c.obj
+ .time_critical.flash_setup
+                0x0000000000000000       0x48 CMakeFiles/OBC-send.dir/flash.c.obj
  .time_critical.flash_write_enable
                 0x0000000000000000       0x24 CMakeFiles/OBC-send.dir/flash.c.obj
  .time_critical.flash_read_register
                 0x0000000000000000       0x34 CMakeFiles/OBC-send.dir/flash.c.obj
+ .time_critical.flash_read_data
+                0x0000000000000000       0x48 CMakeFiles/OBC-send.dir/flash.c.obj
+ .time_critical.flash_write_data
+                0x0000000000000000       0x60 CMakeFiles/OBC-send.dir/flash.c.obj
+ .time_critical.flash_erase_4k
+                0x0000000000000000       0x48 CMakeFiles/OBC-send.dir/flash.c.obj
  .time_critical.flash_erase_32k
                 0x0000000000000000       0x48 CMakeFiles/OBC-send.dir/flash.c.obj
  .time_critical.flash_erase_64k
@@ -90,19 +98,34 @@ Discarded input sections
  .text.get_id   0x0000000000000000       0x54 CMakeFiles/OBC-send.dir/flash.c.obj
  .text.flash_busy
                 0x0000000000000000        0x4 CMakeFiles/OBC-send.dir/flash.c.obj
+ .bss.cs_pin    0x0000000000000000        0x4 CMakeFiles/OBC-send.dir/flash.c.obj
  .bss.erase_chip.6364
                 0x0000000000000000        0x1 CMakeFiles/OBC-send.dir/flash.c.obj
  .bss.erase_dat32.6357
                 0x0000000000000000        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
+ .bss.erase_dat4.6353
+                0x0000000000000000        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
  .bss.erase_dat64.6361
+                0x0000000000000000        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
+ .bss.read_dat.6335
                 0x0000000000000000        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
  .bss.rxbuf.6372
                 0x0000000000000000      0x400 CMakeFiles/OBC-send.dir/flash.c.obj
  .bss.txbuf.6371
                 0x0000000000000000      0x400 CMakeFiles/OBC-send.dir/flash.c.obj
+ .bss.write_dat.6341
+                0x0000000000000000        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
+ .comment       0x0000000000000000       0x5a CMakeFiles/OBC-send.dir/flash.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/OBC-send.dir/flash.c.obj
+ COMMON         0x0000000000000000      0x108 CMakeFiles/OBC-send.dir/flash.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/UART.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/UART.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/UART.c.obj
+ .text.uart_setup
+                0x0000000000000000       0x34 CMakeFiles/OBC-send.dir/UART.c.obj
+ .text.openlst_setup
+                0x0000000000000000       0x34 CMakeFiles/OBC-send.dir/UART.c.obj
  .rodata.uart_test.str1.4
                 0x0000000000000000        0xe CMakeFiles/OBC-send.dir/UART.c.obj
  .text.uart_test
@@ -111,12 +134,30 @@ Discarded input sections
                 0x0000000000000000       0x58 CMakeFiles/OBC-send.dir/UART.c.obj
  .text.uart_get_telem
                 0x0000000000000000       0x54 CMakeFiles/OBC-send.dir/UART.c.obj
+ .text.send_packet
+                0x0000000000000000       0x5c CMakeFiles/OBC-send.dir/UART.c.obj
+ .comment       0x0000000000000000       0x5a CMakeFiles/OBC-send.dir/UART.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/OBC-send.dir/UART.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/IMU.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/IMU.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/IMU.c.obj
+ .text.imu_init
+                0x0000000000000000       0x9c CMakeFiles/OBC-send.dir/IMU.c.obj
+ .text.get_accel
+                0x0000000000000000       0x38 CMakeFiles/OBC-send.dir/IMU.c.obj
+ .comment       0x0000000000000000       0x5a CMakeFiles/OBC-send.dir/IMU.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/OBC-send.dir/IMU.c.obj
+ COMMON         0x0000000000000000        0x6 CMakeFiles/OBC-send.dir/IMU.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/main.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/main.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/main.c.obj
+ .bss.target_addr
+                0x0000000000000000        0x4 CMakeFiles/OBC-send.dir/main.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/LED.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/LED.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/LED.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -144,6 +185,8 @@ Discarded input sections
                 0x0000000000000000       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_get_function
                 0x0000000000000000       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .text.gpio_set_pulls
+                0x0000000000000000       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_irqover
                 0x0000000000000000       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_inover
@@ -176,6 +219,8 @@ Discarded input sections
                 0x0000000000000000       0x7c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_input_enabled
                 0x0000000000000000       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .text.gpio_init
+                0x0000000000000000       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_init_mask
                 0x0000000000000000       0x6c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .bss._callbacks
@@ -214,6 +259,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .text.uart_init
+                0x0000000000000000       0xe4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text.uart_deinit
                 0x0000000000000000       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text.uart_set_baudrate
@@ -222,6 +269,10 @@ Discarded input sections
                 0x0000000000000000       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text.uart_is_readable_within_us
                 0x0000000000000000       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .comment       0x0000000000000000       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ COMMON         0x0000000000000000        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -422,6 +473,8 @@ Discarded input sections
                 0x0000000000000000       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.clock_configure
                 0x0000000000000000      0x114 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .text.clock_get_hz
+                0x0000000000000000        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.clock_set_reported_hz
                 0x0000000000000000        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.frequency_count_khz
@@ -493,34 +546,14 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_buffer
                 0x0000000000000000        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._out_null
-                0x0000000000000000        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._out_rev
-                0x0000000000000000       0xd0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ntoa_format
-                0x0000000000000000      0x1d0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._out_fct
-                0x0000000000000000       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x0000000000000000      0x478 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .rodata._ftoa.str1.4
-                0x0000000000000000       0x15 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x0000000000000000      0x3e0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._vsnprintf
-                0x0000000000000000      0xb08 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .rodata._vsnprintf
-                0x0000000000000000      0x1e0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_sprintf
                 0x0000000000000000       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_snprintf
                 0x0000000000000000       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.__wrap_vsnprintf
                 0x0000000000000000       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text.vfctprintf
-                0x0000000000000000       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_printf
                 0x0000000000000000       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .rodata.pow10.5435
-                0x0000000000000000       0x50 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.clzsi    0x0000000000000000        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -541,10 +574,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .text.__wrap___aeabi_idiv
-                0x0000000000000000       0x50 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .text.__wrap___aeabi_ldiv
-                0x0000000000000000      0x434 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_s64s64_rem
                 0x0000000000000000        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .text.divmod_u64u64_rem
@@ -556,31 +585,11 @@ Discarded input sections
                 0x0000000000000000        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.pop_r8_r11
                 0x0000000000000000        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_darithmetic
-                0x0000000000000000       0x80 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_cdcmple
-                0x0000000000000000       0x6c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_dcmpeq
                 0x0000000000000000       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_dcmplt
-                0x0000000000000000        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_dcmple
-                0x0000000000000000       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_dcmpge
-                0x0000000000000000       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_dcmpgt
-                0x0000000000000000        0xa CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_dcmpun
-                0x0000000000000000       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.__wrap___aeabi_ui2d
                 0x0000000000000000       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_i2d
-                0x0000000000000000       0x38 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_d2iz
-                0x0000000000000000       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.double2int
-                0x0000000000000000       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .text.__wrap___aeabi_d2uiz
                 0x0000000000000000       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .text.fix2double
                 0x0000000000000000       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -704,14 +713,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .text.__wrap___aeabi_dsub
-                0x0000000000000000       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .text.dadd_shim
-                0x0000000000000000      0x15c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .text.dmul_shim
-                0x0000000000000000      0x15c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .text.ddiv_shim
-                0x0000000000000000      0x1b0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dsqrt_shim
                 0x0000000000000000      0x1a8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dcordic_vec_step
@@ -720,18 +721,12 @@ Discarded input sections
                 0x0000000000000000       0x76 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.double2int_shim
                 0x0000000000000000        0xe CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .text.double2uint_shim
-                0x0000000000000000        0xe CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.double2int64_shim
                 0x0000000000000000       0x1a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .text.double2uint64_shim
-                0x0000000000000000       0x70 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.double2float_shim
                 0x0000000000000000       0x5c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.x2double_shims
                 0x0000000000000000       0x90 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .text.dunpacks
-                0x0000000000000000       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dreduce  0x0000000000000000       0x82 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .text.dtan_shim
                 0x0000000000000000       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -951,8 +946,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .text.stdio_buffered_printer
-                0x0000000000000000       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_begin
                 0x0000000000000000       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_end
@@ -965,10 +958,6 @@ Discarded input sections
  .text._write   0x0000000000000000       0xac CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_flush
                 0x0000000000000000       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .text.__wrap_vprintf
-                0x0000000000000000       0xd8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .text.__wrap_printf
-                0x0000000000000000       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_getchar
                 0x0000000000000000       0x78 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.getchar_timeout_us
@@ -1190,21 +1179,36 @@ Discarded input sections
                 0x0000000000000000      0x19c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_deinit
                 0x0000000000000000       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_set_baudrate
+                0x0000000000000000       0xc4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_init
+                0x0000000000000000       0x54 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_set_slave_mode
                 0x0000000000000000       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_write_blocking
+                0x0000000000000000       0xd8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_write_blocking_until
                 0x0000000000000000       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_write_timeout_per_char_us
                 0x0000000000000000       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .text.i2c_read_blocking
+                0x0000000000000000       0x9c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_read_blocking_until
                 0x0000000000000000       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_read_timeout_per_char_us
                 0x0000000000000000       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .data.i2c0_inst
+                0x0000000000000000        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .data.i2c1_inst
                 0x0000000000000000        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .comment       0x0000000000000000       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .text.spi_init
+                0x0000000000000000       0xf4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .text.spi_deinit
                 0x0000000000000000       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .text.spi_set_baudrate
@@ -1213,12 +1217,19 @@ Discarded input sections
                 0x0000000000000000       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .time_critical.spi_write_read_blocking
                 0x0000000000000000       0x74 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .time_critical.spi_write_blocking
+                0x0000000000000000       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .time_critical.spi_read_blocking
+                0x0000000000000000       0x74 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .time_critical.spi_write16_read16_blocking
                 0x0000000000000000       0x74 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .time_critical.spi_write16_blocking
                 0x0000000000000000       0x50 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .time_critical.spi_read16_blocking
                 0x0000000000000000       0x74 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .comment       0x0000000000000000       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
@@ -1254,9 +1265,9 @@ Discarded input sections
  .comment       0x0000000000000000       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .ARM.attributes
                 0x0000000000000000       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- .text          0x0000000000000000        0x0 /tmp/cc5xUYlE.o
- .data          0x0000000000000000        0x0 /tmp/cc5xUYlE.o
- .bss           0x0000000000000000        0x0 /tmp/cc5xUYlE.o
+ .text          0x0000000000000000        0x0 /tmp/ccrIBifU.o
+ .data          0x0000000000000000        0x0 /tmp/ccrIBifU.o
+ .bss           0x0000000000000000        0x0 /tmp/ccrIBifU.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1477,11 +1488,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/cc5xUYlE.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccrIBifU.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x52c8
+.text           0x0000000010000100     0x7008
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1543,494 +1554,564 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x00000000100002c0                _init
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x00000000100002c4       0x98 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
- .text.uart_setup
-                0x000000001000035c       0x34 CMakeFiles/OBC-send.dir/UART.c.obj
-                0x000000001000035c                uart_setup
- .text.openlst_setup
-                0x0000000010000390       0x34 CMakeFiles/OBC-send.dir/UART.c.obj
-                0x0000000010000390                openlst_setup
- .text.send_packet
-                0x00000000100003c4       0x5c CMakeFiles/OBC-send.dir/UART.c.obj
-                0x00000000100003c4                send_packet
- .text.imu_init
-                0x0000000010000420       0x9c CMakeFiles/OBC-send.dir/IMU.c.obj
-                0x0000000010000420                imu_init
- .text.get_accel
-                0x00000000100004bc       0x38 CMakeFiles/OBC-send.dir/IMU.c.obj
-                0x00000000100004bc                get_accel
  .text.startup.main
-                0x00000000100004f4       0x70 CMakeFiles/OBC-send.dir/main.c.obj
-                0x00000000100004f4                main
+                0x000000001000035c        0xc CMakeFiles/OBC-send.dir/main.c.obj
+                0x000000001000035c                main
+ .text.led_fader
+                0x0000000010000368      0x12c CMakeFiles/OBC-send.dir/LED.c.obj
+                0x0000000010000368                led_fader
  .text.gpio_set_function
-                0x0000000010000564       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000564                gpio_set_function
- .text.gpio_set_pulls
-                0x0000000010000594       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000594                gpio_set_pulls
- .text.gpio_init
-                0x00000000100005c4       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100005c4                gpio_init
+                0x0000000010000494       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000494                gpio_set_function
  .text.hw_claim_or_assert
-                0x0000000010000600       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000600                hw_claim_or_assert
+                0x00000000100004c4       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100004c4                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x0000000010000648       0x9c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000648                hw_claim_unused_from_range
+                0x000000001000050c       0x9c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x000000001000050c                hw_claim_unused_from_range
  .text.running_on_fpga
-                0x00000000100006e4       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x00000000100006e4                running_on_fpga
+                0x00000000100005a8       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000000100005a8                running_on_fpga
  .text.spin_locks_reset
-                0x00000000100006f4       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100006f4                spin_locks_reset
+                0x00000000100005b8       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005b8                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000010000710       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000710                next_striped_spin_lock_num
+                0x00000000100005d4       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005d4                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x0000000010000728       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000728                spin_lock_claim_unused
- .text.uart_init
-                0x0000000010000748       0xe4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000010000748                uart_init
+                0x00000000100005ec       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005ec                spin_lock_claim_unused
  .text.timer_pool_entry_comparator
-                0x000000001000082c       0x34 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x000000001000082c                timer_pool_entry_comparator
+                0x000000001000060c       0x34 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000060c                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x0000000010000860       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000640       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_add_alarm_at.constprop.0
-                0x0000000010000890      0x128 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000670      0x128 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock
-                0x00000000100009b8      0x108 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000798      0x108 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010000ac0      0x1c8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100008a0      0x1c8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010000c88       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000c88                alarm_pool_init_default
+                0x0000000010000a68       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000a68                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x0000000010000cec        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000cec                alarm_pool_get_default
+                0x0000000010000acc        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000acc                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010000cf4      0x1ac CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000cf4                alarm_pool_add_alarm_at
+                0x0000000010000ad4      0x1ac CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000ad4                alarm_pool_add_alarm_at
  .text.sleep_until
-                0x0000000010000ea0       0xac CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000ea0                sleep_until
+                0x0000000010000c80       0xac CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000c80                sleep_until
  .text.sleep_ms
-                0x0000000010000f4c       0x38 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000f4c                sleep_ms
+                0x0000000010000d2c       0x38 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d2c                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x0000000010000f84       0xd4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000f84                best_effort_wfe_or_timeout
+                0x0000000010000d64       0xd4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d64                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000010001058       0xb8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000e38       0xb8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010001110       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001110                hardware_alarm_claim
+                0x0000000010000ef0       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000ef0                hardware_alarm_claim
  .text.time_us_64
-                0x0000000010001128       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001128                time_us_64
+                0x0000000010000f08       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000f08                time_us_64
  .text.busy_wait_until
-                0x000000001000113c       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x000000001000113c                busy_wait_until
+                0x0000000010000f1c       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000f1c                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x000000001000115c       0x8c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x000000001000115c                hardware_alarm_set_callback
+                0x0000000010000f3c       0x8c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000f3c                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x00000000100011e8       0xe4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100011e8                hardware_alarm_set_target
+                0x0000000010000fc8       0xe4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000fc8                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x00000000100012cc       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100012cc                hardware_alarm_cancel
+                0x00000000100010ac       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100010ac                hardware_alarm_cancel
  .text.lock_init
-                0x000000001000130c       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x000000001000130c                lock_init
+                0x00000000100010ec       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x00000000100010ec                lock_init
  .text.mutex_init
-                0x000000001000131c       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x000000001000131c                mutex_init
+                0x00000000100010fc       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000000100010fc                mutex_init
  .text.recursive_mutex_init
-                0x0000000010001338       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010001338                recursive_mutex_init
+                0x0000000010001118       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001118                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010001354       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010001354                critical_section_init
+                0x0000000010001134       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010001134                critical_section_init
  .text.ph_merge_nodes
-                0x0000000010001370       0x68 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001150       0x68 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x00000000100013d8       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100013d8                ph_post_alloc_init
+                0x00000000100011b8       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100011b8                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001414       0x90 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001414                ph_merge_two_pass
+                0x00000000100011f4       0x90 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100011f4                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x00000000100014a4       0xf8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001284       0xf8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x000000001000159c      0x13c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x000000001000159c                ph_remove_head
+                0x000000001000137c      0x13c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000000001000137c                ph_remove_head
  .text.ph_remove_and_free_node
-                0x00000000100016d8       0x7c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100016d8                ph_remove_and_free_node
+                0x00000000100014b8       0x7c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100014b8                ph_remove_and_free_node
  .text.runtime_init
-                0x0000000010001754       0xf0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001754                runtime_init
- .text.exit     0x0000000010001844        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001844                exit
- .text.panic    0x0000000010001848       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001848                panic
+                0x0000000010001534       0xf0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001534                runtime_init
+ .text.exit     0x0000000010001624        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001624                exit
+ .text.panic    0x0000000010001628       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001628                panic
  .text.hard_assertion_failure
-                0x0000000010001878        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001878                hard_assertion_failure
+                0x0000000010001658        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001658                hard_assertion_failure
  .text.clocks_init
-                0x0000000010001884      0x2bc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001884                clocks_init
- .text.clock_get_hz
-                0x0000000010001b40        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001b40                clock_get_hz
+                0x0000000010001664      0x2bc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001664                clocks_init
  .text.irq_set_enabled
-                0x0000000010001b4c       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001b4c                irq_set_enabled
+                0x0000000010001920       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001920                irq_set_enabled
  .text.irq_set_pending
-                0x0000000010001b70       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001b70                irq_set_pending
+                0x0000000010001944       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001944                irq_set_pending
  .text.irq_get_vtable_handler
-                0x0000000010001b80       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001b80                irq_get_vtable_handler
+                0x0000000010001954       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001954                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x0000000010001b90       0x54 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001b90                irq_set_exclusive_handler
+                0x0000000010001964       0x54 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001964                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x0000000010001be4      0x1b8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001be4                irq_remove_handler
+                0x00000000100019b8      0x1b8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100019b8                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000010001d9c       0xb8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001d9c                irq_add_tail_to_free_list
+                0x0000000010001b70       0xb8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001b70                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010001e54       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001e54                irq_init_priorities
+                0x0000000010001c28       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001c28                irq_init_priorities
  .text.pll_init
-                0x0000000010001e78       0xa4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x0000000010001e78                pll_init
+                0x0000000010001c4c       0xa4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010001c4c                pll_init
  .text.watchdog_start_tick
-                0x0000000010001f1c       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001f1c                watchdog_start_tick
+                0x0000000010001cf0       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001cf0                watchdog_start_tick
  .text.watchdog_reboot
-                0x0000000010001f2c       0x98 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001f2c                watchdog_reboot
+                0x0000000010001d00       0x98 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001d00                watchdog_reboot
  .text.xosc_init
-                0x0000000010001fc4       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010001fc4                xosc_init
+                0x0000000010001d98       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010001d98                xosc_init
+ .text._out_null
+                0x0000000010001dc0        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._out_rev
+                0x0000000010001dc4       0xd0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ntoa_format
+                0x0000000010001e94      0x1d0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x0000000010001fec       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002064       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._out_fct
+                0x0000000010002074       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x0000000010002084      0x478 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x00000000100024fc      0x3e0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._vsnprintf
+                0x00000000100028dc      0xb08 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text.vfctprintf
+                0x00000000100033e4       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100033e4                vfctprintf
  .text.weak_raw_vprintf
-                0x0000000010001ffc       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010001ffc                weak_raw_vprintf
- .text          0x000000001000202c       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010003404       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003404                weak_raw_vprintf
+ .text          0x0000000010003434       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x000000001000203c       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x000000001000203c                rom_func_lookup
+                0x0000000010003444       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003444                rom_func_lookup
  .text.rom_data_lookup
-                0x000000001000204c       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x000000001000204c                rom_data_lookup
+                0x0000000010003454       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003454                rom_data_lookup
  .text.rom_funcs_lookup
-                0x000000001000205c       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x000000001000205c                rom_funcs_lookup
+                0x0000000010003464       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003464                rom_funcs_lookup
+ .text.__wrap___aeabi_idiv
+                0x00000000100034a0       0x50 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100034a0                __wrap___aeabi_idivmod
+                0x00000000100034a0                divmod_s32s32
+                0x00000000100034a0                div_s32s32
+                0x00000000100034a0                __wrap___aeabi_idiv
+                0x00000000100034a8                divmod_s32s32_unsafe
+                0x00000000100034d4                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x0000000010002098       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010002098                __wrap___aeabi_uidiv
-                0x0000000010002098                __wrap___aeabi_uidivmod
-                0x0000000010002098                div_u32u32
-                0x0000000010002098                divmod_u32u32
-                0x00000000100020a0                divmod_u32u32_unsafe
-                0x00000000100020c8                divmod_u32u32_savestate
+                0x00000000100034f0       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100034f0                __wrap___aeabi_uidiv
+                0x00000000100034f0                __wrap___aeabi_uidivmod
+                0x00000000100034f0                div_u32u32
+                0x00000000100034f0                divmod_u32u32
+                0x00000000100034f8                divmod_u32u32_unsafe
+                0x0000000010003520                divmod_u32u32_savestate
+ .text.__wrap___aeabi_ldiv
+                0x000000001000353c      0x434 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x000000001000353c                div_s64s64
+                0x000000001000353c                divmod_s64s64
+                0x000000001000353c                __wrap___aeabi_ldivmod
+                0x0000000010003574                div_u64u64
+                0x0000000010003574                divmod_u64u64
+                0x0000000010003574                __wrap___aeabi_uldivmod
+                0x0000000010003584                divmod_u64u64_savestate
+                0x00000000100035ac                divmod_s64s64_unsafe
+                0x0000000010003634                divmod_u64u64_unsafe
+ .text.__wrap___aeabi_darithmetic
+                0x0000000010003970       0x80 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003970                __wrap___aeabi_drsub
+                0x0000000010003976                __wrap___aeabi_dsub
+                0x0000000010003988                __wrap___aeabi_dadd
+                0x000000001000399a                __wrap___aeabi_ddiv
+                0x00000000100039d6                __wrap___aeabi_dmul
+ .text.__wrap___aeabi_cdcmple
+                0x00000000100039f0       0x6c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000000100039f0                __wrap___aeabi_cdrcmple
+                0x0000000010003a00                __wrap___aeabi_cdcmple
+                0x0000000010003a00                __wrap___aeabi_cdcmpeq
+ .text.__wrap___aeabi_dcmplt
+                0x0000000010003a5c        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003a5c                __wrap___aeabi_dcmplt
+ .text.__wrap___aeabi_dcmple
+                0x0000000010003a68       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003a68                __wrap___aeabi_dcmple
+ .text.__wrap___aeabi_dcmpge
+                0x0000000010003a78       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003a78                __wrap___aeabi_dcmpge
+ .text.__wrap___aeabi_dcmpgt
+                0x0000000010003a88        0xa CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003a88                __wrap___aeabi_dcmpgt
+ .text.__wrap___aeabi_dcmpun
+                0x0000000010003a92       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003a92                __wrap___aeabi_dcmpun
+ *fill*         0x0000000010003aae        0x2 
+ .text.__wrap___aeabi_i2d
+                0x0000000010003ab0       0x38 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003ab0                __wrap___aeabi_ui2d
+                0x0000000010003ab8                __wrap___aeabi_i2d
+ .text.__wrap___aeabi_d2iz
+                0x0000000010003ae8       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003ae8                __wrap___aeabi_d2iz
+                0x0000000010003ae8                double2int_z
+ .text.__wrap___aeabi_d2uiz
+                0x0000000010003b30       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003b30                double2uint
+                0x0000000010003b30                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x00000000100020e4       0xc0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x00000000100020e4                __aeabi_double_init
+                0x0000000010003b48       0xc0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010003b48                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x00000000100021a4       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100021a4                double_table_shim_on_use_helper
+                0x0000000010003c08       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003c08                double_table_shim_on_use_helper
+ .text.__wrap___aeabi_dsub
+                0x0000000010003c34       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003c34                drsub_shim
+                0x0000000010003c3a                dsub_shim
+ .text.dadd_shim
+                0x0000000010003c44      0x15c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003c44                dadd_shim
+ .text.dmul_shim
+                0x0000000010003da0      0x15c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003da0                dmul_shim
+ .text.ddiv_shim
+                0x0000000010003efc      0x1b0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003efc                ddiv_shim
+ .text.double2uint_shim
+                0x00000000100040ac        0xe CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100040ac                double2uint_shim
+                0x00000000100040ae                double2ufix_shim
+ *fill*         0x00000000100040ba        0x2 
+ .text.double2uint64_shim
+                0x00000000100040bc       0x70 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100040bc                double2uint64_shim
+                0x00000000100040be                double2ufix64_shim
+                0x00000000100040de                d2fix_a
+ .text.dunpacks
+                0x000000001000412c       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000000001000412c                dunpacks
  .text.__aeabi_lmul
-                0x00000000100021d0       0x32 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x00000000100021d0                __wrap___aeabi_lmul
- *fill*         0x0000000010002202        0x2 
+                0x0000000010004168       0x32 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x0000000010004168                __wrap___aeabi_lmul
+ *fill*         0x000000001000419a        0x2 
  .text.__aeabi_float_init
-                0x0000000010002204       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010002204                __aeabi_float_init
+                0x000000001000419c       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x000000001000419c                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x0000000010002268       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000010002268                float_table_shim_on_use_helper
- .text          0x0000000010002294       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010002294                __aeabi_mem_init
- .text.memset   0x00000000100022a4        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100022a4                __wrap_memset
- .text.memcpy   0x00000000100022b0        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100022b0                __wrap___aeabi_memcpy
-                0x00000000100022b0                __wrap_memcpy
+                0x0000000010004200       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x0000000010004200                float_table_shim_on_use_helper
+ .text          0x000000001000422c       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000000001000422c                __aeabi_mem_init
+ .text.memset   0x000000001000423c        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x000000001000423c                __wrap_memset
+ .text.memcpy   0x0000000010004248        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004248                __wrap___aeabi_memcpy
+                0x0000000010004248                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x00000000100022bc       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004254       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x00000000100022cc       0x94 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004264       0x94 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .text.stdio_buffered_printer
+                0x00000000100042f8       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x0000000010002360      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000435c      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010002460       0xa4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010002460                __wrap_putchar
+                0x000000001000445c       0xa4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000445c                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010002504       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010002504                __wrap_puts
+                0x0000000010004500       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004500                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010002540       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010002540                stdio_set_driver_enabled
+                0x000000001000453c       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000453c                stdio_set_driver_enabled
+ .text.__wrap_vprintf
+                0x0000000010004578       0xd8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004578                __wrap_vprintf
+ .text.__wrap_printf
+                0x0000000010004650       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004650                __wrap_printf
  .text.stdio_init_all
-                0x000000001000257c        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x000000001000257c                stdio_init_all
+                0x0000000010004668        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004668                stdio_init_all
  .text.resetd_init
-                0x0000000010002584        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004670        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x0000000010002588        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004674        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x0000000010002594       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004680       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x00000000100025bc        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100046a8        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x00000000100025c0       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100046ac       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x0000000010002624        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010002624                usbd_app_driver_get_cb
+                0x0000000010004710        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004710                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x0000000010002630       0x34 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010002630                tud_cdc_line_coding_cb
+                0x000000001000471c       0x34 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x000000001000471c                tud_cdc_line_coding_cb
  .text.stdio_usb_in_chars
-                0x0000000010002664       0x68 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010002664                stdio_usb_in_chars
+                0x0000000010004750       0x68 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004750                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x00000000100026cc       0xec CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100047b8       0xec CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x00000000100027b8       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100048a4       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x00000000100027c8       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100048b4       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_init
-                0x00000000100027ec       0x90 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x00000000100027ec                stdio_usb_init
+                0x00000000100048d8       0x90 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100048d8                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x000000001000287c        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x000000001000287c                tud_descriptor_device_cb
+                0x0000000010004968        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004968                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x0000000010002884        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010002884                tud_descriptor_configuration_cb
+                0x0000000010004970        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004970                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x000000001000288c       0x70 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x000000001000288c                tud_descriptor_string_cb
+                0x0000000010004978       0x70 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004978                tud_descriptor_string_cb
  .text.dcd_rp2040_irq
-                0x00000000100028fc      0x21c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100049e8      0x21c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .text.dcd_int_enable
-                0x0000000010002b18        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002b18                dcd_int_enable
+                0x0000000010004c04        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004c04                dcd_int_enable
  .text.dcd_set_address
-                0x0000000010002b24       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002b24                dcd_set_address
+                0x0000000010004c10       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004c10                dcd_set_address
  .text.dcd_connect
-                0x0000000010002b38       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002b38                dcd_connect
+                0x0000000010004c24       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004c24                dcd_connect
  .text.dcd_init
-                0x0000000010002b48      0x148 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002b48                dcd_init
+                0x0000000010004c34      0x148 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004c34                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000010002c90       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002c90                dcd_edpt0_status_complete
+                0x0000000010004d7c       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004d7c                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x0000000010002cac       0xf0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002cac                dcd_edpt_open
+                0x0000000010004d98       0xf0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004d98                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x0000000010002d9c       0xbc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002d9c                dcd_edpt_close_all
+                0x0000000010004e88       0xbc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e88                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x0000000010002e58       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002e58                dcd_edpt_xfer
+                0x0000000010004f44       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004f44                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000010002e7c       0x38 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002e7c                dcd_edpt_stall
+                0x0000000010004f68       0x38 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004f68                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x0000000010002eb4       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010002eb4                dcd_edpt_clear_stall
+                0x0000000010004fa0       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004fa0                dcd_edpt_clear_stall
  .text._hw_endpoint_buffer_control_update32.part.0
-                0x0000000010002ee4       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010004fd0       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .text.rp2040_usb_init
-                0x0000000010002f04       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010002f04                rp2040_usb_init
+                0x0000000010004ff0       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010004ff0                rp2040_usb_init
  .text.hw_endpoint_reset_transfer
-                0x0000000010002f50        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010002f50                hw_endpoint_reset_transfer
+                0x000000001000503c        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000000001000503c                hw_endpoint_reset_transfer
  .text._hw_endpoint_buffer_control_update32
-                0x0000000010002f5c       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010002f5c                _hw_endpoint_buffer_control_update32
+                0x0000000010005048       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005048                _hw_endpoint_buffer_control_update32
  .text.hw_endpoint_xfer_start
-                0x0000000010002f9c      0x138 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010002f9c                hw_endpoint_xfer_start
+                0x0000000010005088      0x138 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005088                hw_endpoint_xfer_start
  .text.hw_endpoint_xfer_continue
-                0x00000000100030d4      0x1e4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100030d4                hw_endpoint_xfer_continue
+                0x00000000100051c0      0x1e4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100051c0                hw_endpoint_xfer_continue
  .text.tud_mounted
-                0x00000000100032b8       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100032b8                tud_mounted
+                0x00000000100053a4       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100053a4                tud_mounted
  .text.tud_suspended
-                0x00000000100032c8       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100032c8                tud_suspended
+                0x00000000100053b4       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100053b4                tud_suspended
  .text.tud_inited
-                0x00000000100032d8        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100032d8                tud_inited
+                0x00000000100053c4        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100053c4                tud_inited
  .text.tud_init
-                0x00000000100032e4       0xd8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100032e4                tud_init
+                0x00000000100053d0       0xd8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100053d0                tud_init
  .text.tud_task
-                0x00000000100033bc      0x8ec CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100033bc                tud_task
+                0x00000000100054a8      0x8ec CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100054a8                tud_task
  .text.dcd_event_bus_signal
-                0x0000000010003ca8      0x120 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003ca8                dcd_event_bus_signal
+                0x0000000010005d94      0x120 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005d94                dcd_event_bus_signal
  .text.dcd_event_bus_reset
-                0x0000000010003dc8       0x54 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003dc8                dcd_event_bus_reset
+                0x0000000010005eb4       0x54 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005eb4                dcd_event_bus_reset
  .text.dcd_event_setup_received
-                0x0000000010003e1c       0x50 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003e1c                dcd_event_setup_received
+                0x0000000010005f08       0x50 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005f08                dcd_event_setup_received
  .text.dcd_event_xfer_complete
-                0x0000000010003e6c       0x68 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003e6c                dcd_event_xfer_complete
+                0x0000000010005f58       0x68 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005f58                dcd_event_xfer_complete
  .text.usbd_open_edpt_pair
-                0x0000000010003ed4       0x80 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003ed4                usbd_open_edpt_pair
+                0x0000000010005fc0       0x80 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005fc0                usbd_open_edpt_pair
  .text.usbd_edpt_open
-                0x0000000010003f54       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003f54                usbd_edpt_open
+                0x0000000010006040       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006040                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000010003f84       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003f84                usbd_edpt_claim
+                0x0000000010006070       0x64 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006070                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x0000000010003fe8       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010003fe8                usbd_edpt_release
+                0x00000000100060d4       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000100060d4                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000010004034       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004034                usbd_edpt_xfer
+                0x0000000010006120       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006120                usbd_edpt_xfer
  .text.tud_control_status
-                0x000000001000407c       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x000000001000407c                tud_control_status
+                0x0000000010006168       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006168                tud_control_status
  .text.tud_control_xfer
-                0x00000000100040ac       0xb8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x00000000100040ac                tud_control_xfer
+                0x0000000010006198       0xb8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006198                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000010004164       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010004164                usbd_control_reset
+                0x0000000010006250       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006250                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010004178        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010004178                usbd_control_set_complete_callback
+                0x0000000010006264        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006264                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010004184       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010004184                usbd_control_set_request
+                0x0000000010006270       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006270                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x00000000100041a0       0xf8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x00000000100041a0                usbd_control_xfer_cb
+                0x000000001000628c       0xf8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000001000628c                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x0000000010004298       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010004298                tud_cdc_n_connected
+                0x0000000010006384       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006384                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x00000000100042c8       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100042c8                tud_cdc_n_available
+                0x00000000100063b4       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100063b4                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x00000000100042e0       0x70 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100042e0                tud_cdc_n_read
+                0x00000000100063cc       0x70 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100063cc                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x0000000010004350       0x78 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010004350                tud_cdc_n_write_flush
+                0x000000001000643c       0x78 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000643c                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x00000000100043c8       0x34 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100043c8                tud_cdc_n_write
+                0x00000000100064b4       0x34 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100064b4                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x00000000100043fc       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100043fc                tud_cdc_n_write_available
+                0x00000000100064e8       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100064e8                tud_cdc_n_write_available
  .text.cdcd_init
-                0x0000000010004414       0x7c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010004414                cdcd_init
+                0x0000000010006500       0x7c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006500                cdcd_init
  .text.cdcd_reset
-                0x0000000010004490       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010004490                cdcd_reset
+                0x000000001000657c       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000657c                cdcd_reset
  .text.cdcd_open
-                0x00000000100044bc       0xe4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100044bc                cdcd_open
+                0x00000000100065a8       0xe4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100065a8                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x00000000100045a0       0xe4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100045a0                cdcd_control_xfer_cb
+                0x000000001000668c       0xe4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000668c                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x0000000010004684      0x198 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010004684                cdcd_xfer_cb
+                0x0000000010006770      0x198 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006770                cdcd_xfer_cb
  .text.tusb_init
-                0x000000001000481c        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x000000001000481c                tusb_init
+                0x0000000010006908        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006908                tusb_init
  .text.tusb_inited
-                0x0000000010004828        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010004828                tusb_inited
+                0x0000000010006914        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006914                tusb_inited
  .text.tu_edpt_validate
-                0x0000000010004830       0x78 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010004830                tu_edpt_validate
+                0x000000001000691c       0x78 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x000000001000691c                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x00000000100048a8       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100048a8                tu_edpt_bind_driver
+                0x0000000010006994       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006994                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x00000000100048d4       0x78 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100048d4                tu_fifo_config
+                0x00000000100069c0       0x78 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100069c0                tu_fifo_config
  .text.tu_fifo_count
-                0x000000001000494c       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000494c                tu_fifo_count
+                0x0000000010006a38       0x20 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006a38                tu_fifo_count
  .text.tu_fifo_empty
-                0x000000001000496c       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000496c                tu_fifo_empty
+                0x0000000010006a58       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006a58                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x000000001000497c       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000497c                tu_fifo_remaining
+                0x0000000010006a68       0x1c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006a68                tu_fifo_remaining
  .text.tu_fifo_read
-                0x0000000010004998       0x9c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004998                tu_fifo_read
+                0x0000000010006a84       0x9c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006a84                tu_fifo_read
  .text.tu_fifo_read_n
-                0x0000000010004a34      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004a34                tu_fifo_read_n
+                0x0000000010006b20      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006b20                tu_fifo_read_n
  .text.tu_fifo_write
-                0x0000000010004b34       0x7c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004b34                tu_fifo_write
+                0x0000000010006c20       0x7c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006c20                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010004bb0       0xf8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004bb0                tu_fifo_write_n
+                0x0000000010006c9c       0xf8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006c9c                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x0000000010004ca8       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004ca8                tu_fifo_clear
+                0x0000000010006d94       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006d94                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x0000000010004cf4       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010004cf4                tu_fifo_set_overwritable
+                0x0000000010006de0       0x3c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006de0                tu_fifo_set_overwritable
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010004d30       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010006e1c       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x0000000010004d40      0x1bc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000010004d40                pico_get_unique_board_id_string
+                0x0000000010006e2c      0x1bc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010006e2c                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x0000000010004efc       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010004efc                flash_get_unique_id
- .text.i2c_set_baudrate
-                0x0000000010004f3c       0xc4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010004f3c                i2c_set_baudrate
- .text.i2c_init
-                0x0000000010005000       0x54 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010005000                i2c_init
- .text.i2c_write_blocking
-                0x0000000010005054       0xd8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010005054                i2c_write_blocking
- .text.i2c_read_blocking
-                0x000000001000512c       0x9c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x000000001000512c                i2c_read_blocking
- .text.spi_init
-                0x00000000100051c8       0xf4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x00000000100051c8                spi_init
- .text          0x00000000100052bc       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x00000000100052bc                strlen
+                0x0000000010006fe8       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000010006fe8                flash_get_unique_id
+ .text          0x0000000010007028       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000010007028                strlen
  *(.fini)
- .fini          0x0000000010005324        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
-                0x0000000010005324                _fini
- .fini.__stub   0x0000000010005328       0xa0 linker stubs
+ .fini          0x0000000010007090        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+                0x0000000010007090                _fini
+ *fill*         0x0000000010007094        0x4 
+ .fini.__stub   0x0000000010007098       0x70 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2042,119 +2123,130 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x00000000100053c8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100053c8                . = ALIGN (0x4)
+ .eh_frame      0x0000000010007108        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010007108                . = ALIGN (0x4)
 
-.glue_7         0x00000000100053c8        0x0
- .glue_7        0x00000000100053c8        0x0 linker stubs
+.glue_7         0x0000000010007108        0x0
+ .glue_7        0x0000000010007108        0x0 linker stubs
 
-.glue_7t        0x00000000100053c8        0x0
- .glue_7t       0x00000000100053c8        0x0 linker stubs
+.glue_7t        0x0000000010007108        0x0
+ .glue_7t       0x0000000010007108        0x0 linker stubs
 
-.vfp11_veneer   0x00000000100053c8        0x0
- .vfp11_veneer  0x00000000100053c8        0x0 linker stubs
+.vfp11_veneer   0x0000000010007108        0x0
+ .vfp11_veneer  0x0000000010007108        0x0 linker stubs
 
-.v4_bx          0x00000000100053c8        0x0
- .v4_bx         0x00000000100053c8        0x0 linker stubs
+.v4_bx          0x0000000010007108        0x0
+ .v4_bx         0x0000000010007108        0x0 linker stubs
 
-.iplt           0x00000000100053c8        0x0
- .iplt          0x00000000100053c8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010007108        0x0
+ .iplt          0x0000000010007108        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x00000000100053c8      0x2b8
+.rodata         0x0000000010007108      0x528
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
+ .rodata.led_fader.str1.4
+                0x0000000010007108       0x22 CMakeFiles/OBC-send.dir/LED.c.obj
+ *fill*         0x000000001000712a        0x2 
  .rodata.spin_lock_claim_unused.str1.4
-                0x00000000100053c8       0x1b CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x00000000100053e3        0x1 
+                0x000000001000712c       0x1b CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000010007147        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x00000000100053e4       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x0000000010005406        0x2 
+                0x0000000010007148       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x000000001000716a        0x2 
  .rodata.panic.str1.4
-                0x0000000010005408       0x12 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x000000001000541a        0x2 
+                0x000000001000716c       0x12 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x000000001000717e        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x000000001000541c        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010007180        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .rodata._ftoa.str1.4
+                0x000000001000718c       0x15 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x00000000100071a1        0x3 
+ .rodata._vsnprintf
+                0x00000000100071a4      0x1e0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010007384        0x4 
+ .rodata.pow10.5435
+                0x0000000010007388       0x50 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x0000000010005428       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100073d8       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x0000000010005468        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007418        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x0000000010005474        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007424        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010005480        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007430        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.5904
-                0x000000001000548c        0x2 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x000000001000548e        0x2 
+                0x000000001000743c        0x2 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x000000001000743e        0x2 
  .rodata._resetd_driver
-                0x0000000010005490       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010007440       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x00000000100054a8       0x13 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x00000000100054bb        0x1 
+                0x0000000010007458       0x13 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x000000001000746b        0x1 
  .rodata.__bi_93.7182
-                0x00000000100054bc        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000746c        0xc CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x00000000100054c8       0x2a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x00000000100054f2        0x2 
+                0x0000000010007478       0x2a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x00000000100074a2        0x2 
  .rodata.usbd_desc_cfg
-                0x00000000100054f4       0x54 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x00000000100074a4       0x54 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x0000000010005548       0x12 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x000000001000555a        0x2 
+                0x00000000100074f8       0x12 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x000000001000750a        0x2 
  .rodata.usbd_desc_str
-                0x000000001000555c       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x000000001000750c       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.dcd_rp2040_irq.str1.4
-                0x0000000010005574       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010007524       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata._hw_endpoint_buffer_control_update32.part.0.str1.4
-                0x0000000010005588       0x1f CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x00000000100055a7        0x1 
+                0x0000000010007538       0x1f CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010007557        0x1 
  .rodata.hw_endpoint_xfer_continue.str1.4
-                0x00000000100055a8       0x29 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x00000000100055d1        0x3 
+                0x0000000010007558       0x29 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010007581        0x3 
  .rodata.str1.4
-                0x00000000100055d4        0x7 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x00000000100055db        0x1 
+                0x0000000010007584        0x7 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x000000001000758b        0x1 
  .rodata.tud_task
-                0x00000000100055dc       0x8c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000001000758c       0x8c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x0000000010005668       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005680                . = ALIGN (0x4)
+                0x0000000010007618       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007630                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010005680                . = ALIGN (0x4)
+                0x0000000010007630                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000010005680        0x0
- .rel.iplt      0x0000000010005680        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000010007630        0x0
+ .rel.iplt      0x0000000010007630        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010005680                __exidx_start = .
+                0x0000000010007630                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010005680                __exidx_end = .
-                0x0000000010005680                . = ALIGN (0x4)
-                0x0000000010005680                __binary_info_start = .
+                0x0000000010007630                __exidx_end = .
+                0x0000000010007630                . = ALIGN (0x4)
+                0x0000000010007630                __binary_info_start = .
 
-.binary_info    0x0000000010005680       0x20
+.binary_info    0x0000000010007630       0x20
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x0000000010005680        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007630        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x0000000010005684        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007634        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010005688        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007638        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x000000001000568c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000763c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010005690        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007640        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x0000000010005694        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007644        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010005698        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007648        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr93
-                0x000000001000569c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x00000000100056a0                __binary_info_end = .
-                0x00000000100056a0                . = ALIGN (0x4)
-                0x00000000100056a0                __etext = .
+                0x000000001000764c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010007650                __binary_info_end = .
+                0x0000000010007650                . = ALIGN (0x4)
+                0x0000000010007650                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2163,268 +2255,230 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020000000       0xc0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x5e8 load address 0x00000000100056a0
+.data           0x00000000200000c0      0x3c0 load address 0x0000000010007650
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
- .time_critical.flash_setup
-                0x00000000200000c0       0x48 CMakeFiles/OBC-send.dir/flash.c.obj
-                0x00000000200000c0                flash_setup
- .time_critical.flash_read_data
-                0x0000000020000108       0x48 CMakeFiles/OBC-send.dir/flash.c.obj
-                0x0000000020000108                flash_read_data
- .time_critical.flash_write_data
-                0x0000000020000150       0x60 CMakeFiles/OBC-send.dir/flash.c.obj
-                0x0000000020000150                flash_write_data
- .time_critical.flash_erase_4k
-                0x00000000200001b0       0x48 CMakeFiles/OBC-send.dir/flash.c.obj
-                0x00000000200001b0                flash_erase_4k
  .time_critical.mutex_enter_blocking
-                0x00000000200001f8       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000200001f8                mutex_enter_blocking
+                0x00000000200000c0       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000000200000c0                mutex_enter_blocking
  .time_critical.mutex_try_enter
-                0x0000000020000240       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000020000240                mutex_try_enter
+                0x0000000020000108       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000020000108                mutex_try_enter
  .time_critical.mutex_enter_timeout_ms
-                0x0000000020000288       0x98 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000020000288                mutex_enter_timeout_ms
+                0x0000000020000150       0x98 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000020000150                mutex_enter_timeout_ms
  .time_critical.mutex_exit
-                0x0000000020000320       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000020000320                mutex_exit
+                0x00000000200001e8       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000000200001e8                mutex_exit
  .time_critical.flash_init_boot2_copyout
-                0x0000000020000348       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020000210       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .time_critical.flash_enable_xip_via_boot2
-                0x0000000020000378       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020000240       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .time_critical.flash_cs_force
-                0x0000000020000388       0x38 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020000250       0x38 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .time_critical.flash_do_cmd
-                0x00000000200003c0       0xc4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x00000000200003c0                flash_do_cmd
- .time_critical.spi_write_blocking
-                0x0000000020000484       0x4c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x0000000020000484                spi_write_blocking
- .time_critical.spi_read_blocking
-                0x00000000200004d0       0x74 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-                0x00000000200004d0                spi_read_blocking
+                0x0000000020000288       0xc4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000020000288                flash_do_cmd
  *(.text*)
- .text          0x0000000020000544        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
-                0x0000000020000544                __aeabi_ldiv0
-                0x0000000020000544                __aeabi_idiv0
- .text.__stub   0x0000000020000548       0x60 linker stubs
-                0x00000000200005a8                . = ALIGN (0x4)
+ .text          0x000000002000034c        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x000000002000034c                __aeabi_ldiv0
+                0x000000002000034c                __aeabi_idiv0
+ .text.__stub   0x0000000020000350       0x30 linker stubs
+                0x0000000020000380                . = ALIGN (0x4)
  *(.rodata*)
-                0x00000000200005a8                . = ALIGN (0x4)
+                0x0000000020000380                . = ALIGN (0x4)
  *(.data*)
+ .data.blue.6101
+                0x0000000020000380        0x4 CMakeFiles/OBC-send.dir/LED.c.obj
  .data.striped_spin_lock_num
-                0x00000000200005a8        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x00000000200005a9        0x3 
+                0x0000000020000384        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000020000385        0x3 
  .data.default_alarm_pool
-                0x00000000200005ac       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000388       0x18 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .data.default_alarm_pool_heap
-                0x00000000200005c4       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
- .data          0x00000000200005d4       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-                0x00000000200005d4                irq_handler_chain_slots
-                0x0000000020000604                irq_handler_chain_first_slot
-                0x000000002000060e                irq_handler_chain_remove_tail
- *fill*         0x000000002000061c        0x4 
+                0x00000000200003a0       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .data          0x00000000200003b0       0x48 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x00000000200003b0                irq_handler_chain_slots
+                0x00000000200003e0                irq_handler_chain_first_slot
+                0x00000000200003ea                irq_handler_chain_remove_tail
+ *fill*         0x00000000200003f8        0x8 
  .data.aeabi_bits_funcs
-                0x0000000020000620       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-                0x0000000020000620                aeabi_bits_funcs
-                0x0000000020000630                aeabi_bits_funcs_end
+                0x0000000020000400       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000020000400                aeabi_bits_funcs
+                0x0000000020000410                aeabi_bits_funcs_end
  .data.aeabi_mem_funcs
-                0x0000000020000630       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000020000630                aeabi_mem_funcs
-                0x0000000020000640                aeabi_mem_funcs_end
+                0x0000000020000410       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000020000410                aeabi_mem_funcs
+                0x0000000020000420                aeabi_mem_funcs_end
  .data.stdio_usb
-                0x0000000020000640       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000020000640                stdio_usb
+                0x0000000020000420       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020000420                stdio_usb
  .data.ep_dir_string
-                0x0000000020000654        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000020000654                ep_dir_string
+                0x0000000020000434        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000020000434                ep_dir_string
  .data._usbd_qdef
-                0x000000002000065c       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000002000065c                _usbd_qdef
- .data.i2c0_inst
-                0x0000000020000680        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000020000680                i2c0_inst
-                0x0000000020000688                . = ALIGN (0x4)
+                0x000000002000043c       0x24 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x000000002000043c                _usbd_qdef
+                0x0000000020000460                . = ALIGN (0x4)
  *(.after_data.*)
-                0x0000000020000688                . = ALIGN (0x4)
-                0x0000000020000688                PROVIDE (__mutex_array_start = .)
+                0x0000000020000460                . = ALIGN (0x4)
+                0x0000000020000460                PROVIDE (__mutex_array_start = .)
  *(SORT_BY_NAME(.mutex_array.*))
  *(.mutex_array)
- .mutex_array   0x0000000020000688        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000020000690                PROVIDE (__mutex_array_end = .)
-                0x0000000020000690                . = ALIGN (0x4)
-                0x0000000020000690                PROVIDE (__preinit_array_start = .)
+ .mutex_array   0x0000000020000460        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020000468                PROVIDE (__mutex_array_end = .)
+                0x0000000020000468                . = ALIGN (0x4)
+                0x0000000020000468                PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00001
-                0x0000000020000690        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000020000468        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .preinit_array.00010
-                0x0000000020000694        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x000000002000046c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .preinit_array.00020
-                0x0000000020000698        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000020000470        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .preinit_array.00020
-                0x000000002000069c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000020000474        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  *(.preinit_array)
-                0x00000000200006a0                PROVIDE (__preinit_array_end = .)
-                0x00000000200006a0                . = ALIGN (0x4)
-                0x00000000200006a0                PROVIDE (__init_array_start = .)
+                0x0000000020000478                PROVIDE (__preinit_array_end = .)
+                0x0000000020000478                . = ALIGN (0x4)
+                0x0000000020000478                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x00000000200006a0        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
- .init_array    0x00000000200006a4        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x00000000200006a8                PROVIDE (__init_array_end = .)
-                0x00000000200006a8                . = ALIGN (0x4)
-                0x00000000200006a8                PROVIDE (__fini_array_start = .)
+ .init_array    0x0000000020000478        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .init_array    0x000000002000047c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000020000480                PROVIDE (__init_array_end = .)
+                0x0000000020000480                . = ALIGN (0x4)
+                0x0000000020000480                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
-                0x00000000200006a8                PROVIDE (__fini_array_end = .)
+                0x0000000020000480                PROVIDE (__fini_array_end = .)
  *(.jcr)
-                0x00000000200006a8                . = ALIGN (0x4)
-                0x00000000200006a8                __data_end__ = .
+                0x0000000020000480                . = ALIGN (0x4)
+                0x0000000020000480                __data_end__ = .
 
 .tm_clone_table
-                0x00000000200006a8        0x0 load address 0x0000000010005c88
+                0x0000000020000480        0x0 load address 0x0000000010007a10
  .tm_clone_table
-                0x00000000200006a8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000480        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
-                0x00000000200006a8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+                0x0000000020000480        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x00000000200006a8        0x0 load address 0x0000000010005c88
- .igot.plt      0x00000000200006a8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.igot.plt       0x0000000020000480        0x0 load address 0x0000000010007a10
+ .igot.plt      0x0000000020000480        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x00000000200006a8        0x0 load address 0x0000000010005c88
-                0x00000000200006a8                . = ALIGN (0x4)
+                0x0000000020000480        0x0 load address 0x0000000010007a10
+                0x0000000020000480                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010005c88
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010007a10
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010005c88                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010007a10                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010005c88
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010007a10
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010005c88                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010007a10                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x00000000200006a8      0xeac
-                0x00000000200006a8                . = ALIGN (0x4)
-                0x00000000200006a8                __bss_start__ = .
+.bss            0x0000000020000480      0xd88
+                0x0000000020000480                . = ALIGN (0x4)
+                0x0000000020000480                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
  .bss.default_alarm_pool_entries
-                0x00000000200006a8      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000480      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.last_avail_time.7161
-                0x00000000200007a8        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .bss           0x00000000200007b0       0x1c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000020000580        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .bss           0x0000000020000588       0x1c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .bss._app_driver
-                0x00000000200007cc        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x00000000200005a4        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._cdcd_itf
-                0x00000000200007d0      0x2d8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000200005a8      0x2d8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
  .bss._ctrl_xfer
-                0x0000000020000aa8       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000020000880       0x14 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
  .bss._ubsd_mutexdef
-                0x0000000020000abc        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020000894        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._usbd_ctrl_buf
-                0x0000000020000ac4       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000002000089c       0x40 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
  .bss._usbd_dev
-                0x0000000020000b04       0x53 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- *fill*         0x0000000020000b57        0x1 
+                0x00000000200008dc       0x53 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ *fill*         0x000000002000092f        0x1 
  .bss._usbd_mutex
-                0x0000000020000b58        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .bss._usbd_q   0x0000000020000b5c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020000930        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .bss._usbd_q   0x0000000020000934        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss.alarm_callbacks
-                0x0000000020000b60       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000938       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.boot2_copyout
-                0x0000000020000b70      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.claimed   0x0000000020000c70        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000020000948      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .bss.claimed   0x0000000020000a48        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .bss.configured_freq
-                0x0000000020000c74       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .bss.cs_pin    0x0000000020000c9c        0x4 CMakeFiles/OBC-send.dir/flash.c.obj
+                0x0000000020000a4c       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .bss.default_alarm_pool_entry_ids_high
-                0x0000000020000ca0       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000a74       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.default_alarm_pool_heap_nodes
-                0x0000000020000cb0       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000a84       0x30 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.desc_str.7060
-                0x0000000020000ce0       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .bss.drivers   0x0000000020000d08        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .bss.erase_dat4.6353
-                0x0000000020000d0c        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
- *fill*         0x0000000020000d0f        0x1 
- .bss.filter    0x0000000020000d10        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000020000ab4       0x28 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .bss.drivers   0x0000000020000adc        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .bss.filter    0x0000000020000ae0        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .bss.green.6103
+                0x0000000020000ae4        0x4 CMakeFiles/OBC-send.dir/LED.c.obj
  .bss.hw_endpoints
-                0x0000000020000d14      0x400 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000020000ae8      0x400 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.lazy_vsnprintf
-                0x0000000020001114        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020000ee8        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .bss.load_value
-                0x0000000020001118        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000020000eec        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
  .bss.next_buffer_ptr
-                0x000000002000111c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .bss.pools     0x0000000020001120       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
- .bss.read_dat.6335
-                0x0000000020001130        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
- *fill*         0x0000000020001133        0x1 
+                0x0000000020000ef0        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .bss.pools     0x0000000020000ef4       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .bss.red.6102  0x0000000020000f04        0x4 CMakeFiles/OBC-send.dir/LED.c.obj
  .bss.retrieved_id
-                0x0000000020001134        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000020000f08        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .bss.sf_clz_func
-                0x000000002000113c        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x000000002000113c                sf_clz_func
+                0x0000000020000f10        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020000f10                sf_clz_func
  .bss.sleep_notifier
-                0x0000000020001140        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000f14        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.stdio_usb_mutex
-                0x0000000020001144        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .bss.target_addr
-                0x000000002000114c        0x4 CMakeFiles/OBC-send.dir/main.c.obj
-                0x000000002000114c                target_addr
+                0x0000000020000f18        0x8 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.target_hi
-                0x0000000020001150       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000f20       0x10 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.usbd_serial_str
-                0x0000000020001160       0x11 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000020001171        0x3 
- .bss.write_dat.6341
-                0x0000000020001174        0x3 CMakeFiles/OBC-send.dir/flash.c.obj
+                0x0000000020000f30       0x11 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .bss._app_driver_count
-                0x0000000020001177        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020000f41        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss._usbd_initialized
-                0x0000000020001178        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020000f42        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .bss.boot2_copyout_valid
-                0x0000000020001179        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.claimed   0x000000002000117a        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000f43        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .bss.claimed   0x0000000020000f44        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x000000002000117b        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .bss.itf_num   0x000000002000117c        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000020000f45        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .bss.itf_num   0x0000000020000f46        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .bss.timer_callbacks_pending
-                0x000000002000117d        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020000f47        0x1 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
- *fill*         0x000000002000117e        0x2 
- COMMON         0x0000000020001180      0x108 CMakeFiles/OBC-send.dir/flash.c.obj
-                0x0000000020001180                dat
-                0x0000000020001188                page_buf
- COMMON         0x0000000020001288        0x6 CMakeFiles/OBC-send.dir/IMU.c.obj
-                0x0000000020001288                imu
- *fill*         0x000000002000128e        0x2 
- COMMON         0x0000000020001290        0x4 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000020001290                uart_char_to_line_feed
- COMMON         0x0000000020001294      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000020001294                sd_table
- COMMON         0x0000000020001394      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000020001394                sf_table
- COMMON         0x0000000020001494       0xc0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000020001494                _usbd_qdef_buf
-                0x0000000020001554                . = ALIGN (0x4)
-                0x0000000020001554                __bss_end__ = .
+ COMMON         0x0000000020000f48      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020000f48                sd_table
+ COMMON         0x0000000020001048      0x100 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000020001048                sf_table
+ COMMON         0x0000000020001148       0xc0 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000020001148                _usbd_qdef_buf
+                0x0000000020001208                . = ALIGN (0x4)
+                0x0000000020001208                __bss_end__ = .
 
-.heap           0x0000000020001554      0x800
-                0x0000000020001554                __end__ = .
-                0x0000000020001554                end = __end__
+.heap           0x0000000020001208      0x800
+                0x0000000020001208                __end__ = .
+                0x0000000020001208                end = __end__
  *(.heap*)
- .heap          0x0000000020001554      0x800 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x0000000020001d54                __HeapLimit = .
+ .heap          0x0000000020001208      0x800 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000000020001a08                __HeapLimit = .
 
 .stack1_dummy   0x0000000020040000        0x0
  *(.stack1*)
@@ -2433,8 +2487,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010005c88        0x0
-                0x0000000010005c88                __flash_binary_end = .
+.flash_end      0x0000000010007a10        0x0
+                0x0000000010007a10                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2447,6 +2501,7 @@ LOAD CMakeFiles/OBC-send.dir/flash.c.obj
 LOAD CMakeFiles/OBC-send.dir/UART.c.obj
 LOAD CMakeFiles/OBC-send.dir/IMU.c.obj
 LOAD CMakeFiles/OBC-send.dir/main.c.obj
+LOAD CMakeFiles/OBC-send.dir/LED.c.obj
 LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -2518,7 +2573,7 @@ LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardwa
 LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 LOAD CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
-LOAD /tmp/cc5xUYlE.o
+LOAD /tmp/ccrIBifU.o
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2542,128 +2597,115 @@ LOAD linker stubs
  .ARM.attributes
                 0x000000000000001e       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .ARM.attributes
-                0x000000000000004a       0x2c CMakeFiles/OBC-send.dir/flash.c.obj
+                0x000000000000004a       0x2c CMakeFiles/OBC-send.dir/main.c.obj
  .ARM.attributes
-                0x0000000000000076       0x2c CMakeFiles/OBC-send.dir/UART.c.obj
+                0x0000000000000076       0x2c CMakeFiles/OBC-send.dir/LED.c.obj
  .ARM.attributes
-                0x00000000000000a2       0x2c CMakeFiles/OBC-send.dir/IMU.c.obj
+                0x00000000000000a2       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .ARM.attributes
-                0x00000000000000ce       0x2c CMakeFiles/OBC-send.dir/main.c.obj
+                0x00000000000000ce       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
  .ARM.attributes
-                0x00000000000000fa       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000000000fa       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .ARM.attributes
-                0x0000000000000126       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x0000000000000126       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .ARM.attributes
-                0x0000000000000152       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x0000000000000152       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .ARM.attributes
-                0x000000000000017e       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000000000000017e       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .ARM.attributes
-                0x00000000000001aa       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x00000000000001aa       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
  .ARM.attributes
-                0x00000000000001d6       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000000001d6       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .ARM.attributes
-                0x0000000000000202       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000000000202       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
  .ARM.attributes
-                0x000000000000022e       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x000000000000022e       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .ARM.attributes
-                0x000000000000025a       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x000000000000025a       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .ARM.attributes
-                0x0000000000000286       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000000000286       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .ARM.attributes
-                0x00000000000002b2       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000000002b2       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .ARM.attributes
-                0x00000000000002de       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000000002de       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
  .ARM.attributes
-                0x000000000000030a       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000000000300       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .ARM.attributes
-                0x0000000000000336       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000000000032c       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
  .ARM.attributes
-                0x0000000000000362       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x0000000000000358       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
  .ARM.attributes
-                0x0000000000000384       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000000000384       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .ARM.attributes
-                0x00000000000003b0       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x00000000000003b0       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .ARM.attributes
-                0x00000000000003dc       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x00000000000003d2       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
  .ARM.attributes
-                0x0000000000000408       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000000003fe       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .ARM.attributes
-                0x0000000000000434       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000000000420       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .ARM.attributes
-                0x0000000000000456       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000000000442       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .ARM.attributes
-                0x0000000000000482       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x000000000000046e       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .ARM.attributes
-                0x00000000000004a4       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000000000490       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
  .ARM.attributes
-                0x00000000000004c6       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x00000000000004b2       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .ARM.attributes
-                0x00000000000004f2       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000000004d4       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .ARM.attributes
-                0x0000000000000514       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x0000000000000500       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .ARM.attributes
-                0x0000000000000536       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000000000522       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .ARM.attributes
-                0x0000000000000558       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000000000544       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
  .ARM.attributes
-                0x0000000000000584       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x0000000000000566       0x32 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .ARM.attributes
-                0x00000000000005a6       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000000000598       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .ARM.attributes
-                0x00000000000005c8       0x22 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x00000000000005c4       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .ARM.attributes
-                0x00000000000005ea       0x32 CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000000005f0       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .ARM.attributes
-                0x000000000000061c       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000000000061c       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .ARM.attributes
-                0x0000000000000648       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000000000648       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .ARM.attributes
-                0x0000000000000674       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000000000674       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .ARM.attributes
-                0x00000000000006a0       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x00000000000006a0       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .ARM.attributes
-                0x00000000000006cc       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000000006cc       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
  .ARM.attributes
-                0x00000000000006f8       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000000006f8       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
  .ARM.attributes
-                0x0000000000000724       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000000000724       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
  .ARM.attributes
-                0x0000000000000750       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000000000750       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .ARM.attributes
-                0x000000000000077c       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000000000077c       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .ARM.attributes
-                0x00000000000007a8       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000000007a8       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .ARM.attributes
-                0x00000000000007d4       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000000007d4       0x22 /tmp/ccrIBifU.o
  .ARM.attributes
-                0x0000000000000800       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00000000000007f6       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x000000000000082c       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000000000814       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
  .ARM.attributes
-                0x0000000000000858       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
- .ARM.attributes
-                0x0000000000000884       0x2c CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .ARM.attributes
-                0x00000000000008b0       0x22 /tmp/cc5xUYlE.o
- .ARM.attributes
-                0x00000000000008d2       0x1e /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .ARM.attributes
-                0x00000000000008f0       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
- .ARM.attributes
-                0x000000000000091c       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
+                0x0000000000000840       0x2c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
 .comment        0x0000000000000000       0xa7
  .comment       0x0000000000000000       0x59 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
                                          0x5a (size before relaxing)
- .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/flash.c.obj
- .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/UART.c.obj
- .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/IMU.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/main.c.obj
+ .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/LED.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_time/time.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -2694,8 +2736,6 @@ LOAD linker stubs
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
- .comment       0x0000000000000059       0x5a CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .comment       0x0000000000000059       0x4e /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
                                          0x4f (size before relaxing)
  .comment       0x00000000000000a7       0x5a /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o

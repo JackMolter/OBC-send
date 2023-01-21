@@ -1,0 +1,71 @@
+static uint slice_r, slice_g, slice_b;
+static uint chan_r, chan_g, chan_b;
+
+void led_setup() {
+    // allocation 
+    gpio_set_function(LEDR, GPIO_FUNC_PWM);
+    gpio_set_function(LEDG, GPIO_FUNC_PWM);
+    gpio_set_function(LEDB, GPIO_FUNC_PWM);
+
+    // determines the slice
+    uint slice_r = pwm_gpio_to_slice_num(LEDR);
+    uint slice_g = pwm_gpio_to_slice_num(LEDG);
+    uint slice_b = pwm_gpio_to_slice_num(LEDB);
+
+    // determines the channel
+    uint chan_r = pwm_gpio_to_channel(LEDR);
+    uint chan_g = pwm_gpio_to_channel(LEDG);
+    uint chan_b = pwm_gpio_to_channel(LEDB); 
+
+    pwm_config config = pwm_get_default_config();
+    pwm_config_set_clkdiv(&config, 4.f);
+
+    //pwm_init(slice_r, &config, true);
+    //pwm_init(slice_g, &config, true);
+    pwm_init(slice_b, &config, true);
+
+}
+
+int led_set_val(uint32_t val) {
+    uint8_t val_r = val & 0xFF;
+    uint8_t val_g = (val >> 8) & 0xFF;
+    uint8_t val_b = (val >> 16) & 0xFF;
+
+    return led_set_vals(~val_r, ~val_g, ~val_b); // Inverted because LEDs pins are inverted
+}
+
+int led_set_vals(uint8_t red, uint8_t green, uint8_t blue) {
+    pwm_set_chan_level(slice_r, chan_r, (red << 8));
+    pwm_set_chan_level(slice_g, chan_g, (green << 8));
+    pwm_set_chan_level(slice_b, chan_b, (blue << 8));
+
+    return 0;
+}
+
+
+void led_fade() {
+        while (1) {
+
+        uint8_t rgbColour[3];
+
+        // Start off with red.
+        rgbColour[0] = 255;
+        rgbColour[1] = 0;
+        rgbColour[2] = 0;  
+
+        // Choose the colours to increment and decrement.
+        for (int decColour = 0; decColour < 3; decColour += 1) {
+            int incColour = decColour == 2 ? 0 : decColour + 1;
+
+            // cross-fade the two colours.
+            for(int i = 0; i < 255; i += 1) {
+                rgbColour[decColour] -= 1;
+                rgbColour[incColour] += 1;
+
+                uint32_t val = (rgbColour[0] & 0xFF) | ((rgbColour[1] & 0xFF) << 8) | ((rgbColour[2] & 0xFF) << 16);
+                led_set_val(val);
+                sleep_ms(10);
+            }
+        }
+    }
+}

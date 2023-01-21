@@ -11,12 +11,15 @@
 #include "IMU.h"
 #include "flash.h"
 #include "UART.h"
+#include "LED.h"
 
 uint32_t target_addr = 0;   // for simplicity 
 uint8_t imu[6];
 
 
 void main() {
+    stdio_init_all();
+
     // initilize all 
     imu_init();
     flash_setup(FLASH_CS);
@@ -42,5 +45,5 @@ void main() {
         flash_erase_4k(target_addr);        // erase flash data 
         sleep_ms(300);
     }
-
+   
 }

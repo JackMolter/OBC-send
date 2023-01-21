@@ -202,6 +202,33 @@ IMU.c.s:
 	$(MAKE) -f CMakeFiles/OBC-send.dir/build.make CMakeFiles/OBC-send.dir/IMU.c.s
 .PHONY : IMU.c.s
 
+LED.obj: LED.c.obj
+
+.PHONY : LED.obj
+
+# target to build an object file
+LED.c.obj:
+	$(MAKE) -f CMakeFiles/OBC-send.dir/build.make CMakeFiles/OBC-send.dir/LED.c.obj
+.PHONY : LED.c.obj
+
+LED.i: LED.c.i
+
+.PHONY : LED.i
+
+# target to preprocess a source file
+LED.c.i:
+	$(MAKE) -f CMakeFiles/OBC-send.dir/build.make CMakeFiles/OBC-send.dir/LED.c.i
+.PHONY : LED.c.i
+
+LED.s: LED.c.s
+
+.PHONY : LED.s
+
+# target to generate assembly for a file
+LED.c.s:
+	$(MAKE) -f CMakeFiles/OBC-send.dir/build.make CMakeFiles/OBC-send.dir/LED.c.s
+.PHONY : LED.c.s
+
 UART.obj: UART.c.obj
 
 .PHONY : UART.obj
@@ -2018,6 +2045,9 @@ help:
 	@echo "... IMU.obj"
 	@echo "... IMU.i"
 	@echo "... IMU.s"
+	@echo "... LED.obj"
+	@echo "... LED.i"
+	@echo "... LED.s"
 	@echo "... UART.obj"
 	@echo "... UART.i"
 	@echo "... UART.s"

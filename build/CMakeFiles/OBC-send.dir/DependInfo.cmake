@@ -116,9 +116,11 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/include"
+  "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "/home/jackmolter/OBC-send/IMU.c" "/home/jackmolter/OBC-send/build/CMakeFiles/OBC-send.dir/IMU.c.obj"
+  "/home/jackmolter/OBC-send/LED.c" "/home/jackmolter/OBC-send/build/CMakeFiles/OBC-send.dir/LED.c.obj"
   "/home/jackmolter/OBC-send/UART.c" "/home/jackmolter/OBC-send/build/CMakeFiles/OBC-send.dir/UART.c.obj"
   "/home/jackmolter/OBC-send/flash.c" "/home/jackmolter/OBC-send/build/CMakeFiles/OBC-send.dir/flash.c.obj"
   "/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "/home/jackmolter/OBC-send/build/CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
@@ -281,6 +283,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/include"
+  "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "/home/jackmolter/OBC-send/build/CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
@@ -384,6 +387,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/include"
   "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/include"
+  "/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pwm/include"
   )
 
 # Targets to which this target links.

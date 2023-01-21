@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OBC-send.dir/IMU.c.obj"
+  "CMakeFiles/OBC-send.dir/LED.c.obj"
   "CMakeFiles/OBC-send.dir/UART.c.obj"
   "CMakeFiles/OBC-send.dir/flash.c.obj"
   "CMakeFiles/OBC-send.dir/home/jackmolter/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"

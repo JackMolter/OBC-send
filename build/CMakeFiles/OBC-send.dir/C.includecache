@@ -6,69 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/jackmolter/OBC-send/IMU.c
+/home/jackmolter/OBC-send/LED.c
 pico/stdlib.h
 /home/jackmolter/OBC-send/pico/stdlib.h
 stdio.h
 -
-hardware/i2c.h
-/home/jackmolter/OBC-send/hardware/i2c.h
-IMU.h
-/home/jackmolter/OBC-send/IMU.h
-
-/home/jackmolter/OBC-send/IMU.h
-
-/home/jackmolter/OBC-send/UART.c
-pico/stdlib.h
-/home/jackmolter/OBC-send/pico/stdlib.h
-stdio.h
--
-hardware/uart.h
-/home/jackmolter/OBC-send/hardware/uart.h
-UART.h
-/home/jackmolter/OBC-send/UART.h
-
-/home/jackmolter/OBC-send/UART.h
-stdint.h
--
-
-/home/jackmolter/OBC-send/flash.c
-stdio.h
--
-pico/stdlib.h
-/home/jackmolter/OBC-send/pico/stdlib.h
-hardware/dma.h
-/home/jackmolter/OBC-send/hardware/dma.h
+pico/time.h
+/home/jackmolter/OBC-send/pico/time.h
+hardware/pwm.h
+/home/jackmolter/OBC-send/hardware/pwm.h
 hardware/irq.h
 /home/jackmolter/OBC-send/hardware/irq.h
-hardware/spi.h
-/home/jackmolter/OBC-send/hardware/spi.h
-flash.h
-/home/jackmolter/OBC-send/flash.h
+LED.h
+/home/jackmolter/OBC-send/LED.h
 
-/home/jackmolter/OBC-send/flash.h
-
-/home/jackmolter/OBC-send/main.c
+/home/jackmolter/OBC-send/LED.h
 stdio.h
 -
-pico/stdlib.h
-/home/jackmolter/OBC-send/pico/stdlib.h
-hardware/dma.h
-/home/jackmolter/OBC-send/hardware/dma.h
-hardware/irq.h
-/home/jackmolter/OBC-send/hardware/irq.h
-hardware/spi.h
-/home/jackmolter/OBC-send/hardware/spi.h
-hardware/uart.h
-/home/jackmolter/OBC-send/hardware/uart.h
-hardware/i2c.h
-/home/jackmolter/OBC-send/hardware/i2c.h
-IMU.h
-/home/jackmolter/OBC-send/IMU.h
-flash.h
-/home/jackmolter/OBC-send/flash.h
-UART.h
-/home/jackmolter/OBC-send/UART.h
 
 /home/jackmolter/pico/pico-sdk/src/boards/include/boards/pico.h
 
@@ -138,11 +92,7 @@ hardware/timer.h
 hardware/platform_defs.h
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/hardware/platform_defs.h
 
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h
-
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
-
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h
 
@@ -150,25 +100,13 @@ hardware/platform_defs.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
 
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
+/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h
 
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h
+/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
-
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h
-hardware/address_mapped.h
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
-hardware/regs/dma.h
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/dma.h
-
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h
-hardware/address_mapped.h
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
-hardware/regs/i2c.h
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/i2c.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
 hardware/address_mapped.h
@@ -182,6 +120,12 @@ hardware/address_mapped.h
 hardware/regs/pads_bank0.h
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/pads_bank0.h
 
+/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h
+hardware/address_mapped.h
+/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
+hardware/regs/pwm.h
+/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/pwm.h
+
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
 hardware/address_mapped.h
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
@@ -189,12 +133,6 @@ hardware/regs/sio.h
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/sio.h
 hardware/structs/interp.h
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/structs/interp.h
-
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h
-hardware/address_mapped.h
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/address_mapped.h
-hardware/regs/spi.h
-/home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/hardware/regs/spi.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
 hardware/address_mapped.h
@@ -216,16 +154,6 @@ pico.h
 hardware/regs/addressmap.h
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/hardware/regs/addressmap.h
 
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h
-pico.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/pico.h
-hardware/structs/dma.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/hardware/structs/dma.h
-hardware/regs/dreq.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/hardware/regs/dreq.h
-pico/assert.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/pico/assert.h
-
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
 pico.h
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/pico.h
@@ -233,16 +161,6 @@ hardware/structs/sio.h
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/hardware/structs/sio.h
 hardware/structs/padsbank0.h
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/hardware/structs/padsbank0.h
-
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h
-pico.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/pico.h
-pico/time.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/pico/time.h
-hardware/structs/i2c.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/hardware/structs/i2c.h
-hardware/regs/dreq.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/hardware/regs/dreq.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
 pico.h
@@ -254,15 +172,13 @@ hardware/regs/intctrl.h
 hardware/regs/m0plus.h
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/hardware/regs/m0plus.h
 
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h
+/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h
 pico.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/pico.h
-pico/time.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/pico/time.h
-hardware/structs/spi.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/hardware/structs/spi.h
+/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pico.h
+hardware/structs/pwm.h
+/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/hardware/structs/pwm.h
 hardware/regs/dreq.h
-/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/hardware/regs/dreq.h
+/home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/hardware/regs/dreq.h
 
 /home/jackmolter/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
 pico.h

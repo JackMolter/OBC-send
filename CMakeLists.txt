@@ -12,6 +12,7 @@ ${CMAKE_CURRENT_LIST_DIR}/flash.c
 ${CMAKE_CURRENT_LIST_DIR}/UART.c
 ${CMAKE_CURRENT_LIST_DIR}/IMU.c
 ${CMAKE_CURRENT_LIST_DIR}/main.c
+${CMAKE_CURRENT_LIST_DIR}/LED.c
 )
 
 target_link_libraries(obc INTERFACE
@@ -21,6 +22,7 @@ target_link_libraries(obc INTERFACE
     hardware_spi
     hardware_irq
     hardware_dma
+    hardware_pwm
 )
 
 add_executable(${PROJECT_NAME})
@@ -29,4 +31,5 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE obc)
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1) # from video
 pico_enable_stdio_uart(${PROJECT_NAME} 0)
+
 pico_add_extra_outputs(${PROJECT_NAME})
