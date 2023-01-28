@@ -13,7 +13,7 @@
 #include "UART.h"
 #include "LED.h"
 
-uint32_t target_addr = 0;   // for simplicity 
+uint32_t target_addr = 0;   // for simplicity , TODO make function to set address location 
 uint8_t imu[6];
 
 

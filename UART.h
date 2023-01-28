@@ -11,11 +11,9 @@
 #define OPENLST_PACKET_HEADER_2 0x69
 
 // pins
-#define UART_TX 16  // for OBC
+#define UART_TX 16  // for OBC UART0
 #define UART_RX 17
-// #define UART_TX 4
-// #define UART_RX 5 
-#define OPENLST_UART_TX 5
+#define OPENLST_UART_TX 5   // 
 #define OPENLST_UART_RX 4
 
 // functions 
