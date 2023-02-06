@@ -24,7 +24,7 @@ void main() {
     imu_init();
     flash_setup(FLASH_CS);
     uart_setup();
-    openlst_setup();
+    openlst_setup();    //
     sleep_ms(100);
 
     while(1) {

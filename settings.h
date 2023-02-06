@@ -2,16 +2,18 @@
 #define OPENLST_HWID 0x0001
 #define OPENLST_UART_BAUD_RATE 115200
 #define OPENLST_UART_ID uart0
-#define OPENLST_UART_TX 5
-#define OPENLST_UART_RX 4
+//#define OPENLST_UART_TX 5
+//#define OPENLST_UART_RX 4
 
 #define OPENLST_PACKET_HEADER_1 0x22
 #define OPENLST_PACKET_HEADER_2 0x69
 #define MAX_PAYLOAD_LEN 242
 
-// UART
-#define UART_TX 16  // for OBC
-#define UART_RX 17
+// OpenLST UART
+#define OPENLST_UART_TX 16  // for OBC --> OpenLST
+#define OPENLST_LSTUART_RX 17
+
+
 
 // Flash
 #define FLASH_BAUD 1000 * 1000 // for test 
@@ -41,10 +43,10 @@
 #define FLASH_READ_REGISTER3 0x15
 
 // IMU
-#define BMI088_ID 0x19 // might be accel id
-#define ACCEL_DATA_LEN 6 // could change after processing
+#define BMI088_ID 0x19 // 
+#define ACCEL_DATA_LEN 6 
 #define I2C_PORT i2c0
-#define BMI088_BAUD 400000
+#define BMI088_BAUD 112800
 
 #define BMI088_SDA 8
 #define BMI088_SCL 9
@@ -87,3 +89,5 @@
 #define LEDR 14     //pins
 #define LEDG 15
 #define LEDB 18
+
+// TODO: refine these a little, we got multiple UARTS and stuff 
